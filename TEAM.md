@@ -54,6 +54,31 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 -
 
+### VuQuangMinh-2A202603657
+
+**Phần việc phụ trách:**
+
+- Trưởng nhóm: điều phối thời gian, ghi chép, review và merge PR của các thành viên.
+- Người chính CP3 (hội tụ nhóm), Problem Statement v0 (CP5) và quyết định (CP6); hỗ trợ kiểm chứng và research CP4, mức can thiệp CP6.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch ba candidate #1–#3 (tìm bài nghe vừa trình độ, kiểm tra phát âm, soát lỗi ngữ pháp); đặt câu hỏi phản biện cho #4, #6 (Thái) và #8 (Quân).
+- Viết cluster, cây OST, bảng chấm điểm shortlist và lý do chọn/loại; đề xuất chọn candidate #7, nhóm đồng ý.
+- Điền thông tin nhóm, vai trò và phân công theo checkpoint trong `TEAM.md`.
+- Rà soát mục 3 (CP4): mở lại link research, bổ sung nguồn trang giá Zapier, bổ sung thời gian và cách phỏng vấn cho các snapshot.
+- Review và merge 15 PR của nhóm vào `main`.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4).
+- `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2 và mục 4 nhật ký tham gia CP3.
+- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm).
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
 ### NguyenCongQuan-2A202603675
 
 **Phần việc phụ trách:**

@@ -10,7 +10,7 @@
 - MSSV: 2A202603657
 - Email trường (không bắt buộc, repo có thể để public): 26ai.minhvq2@vinuni.edu.vn
 - Tên nhóm: Nhom9999
-- Link repo nhóm: https://github.com/Minh8246/K5-L3A-Day02-Nhom9999-DiscoveryProblemFraming
+- Link repo nhóm: https://github.com/Minh8246/K5-L3A-DAY02-Nhom9999-DiscoveryProblemFraming
 
 ---
 
@@ -21,14 +21,14 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 |Cần đọc, tổng hợp nhiều thông tin|Khi luyện nghe tiếng Anh, tôi muốn tìm được bài nghe vừa trình độ và đúng chủ đề mình cần, để không phí thời gian vào bài quá khó hoặc đã nghe rồi|Bản thân|Mất 30 phút để tìm kênh tiếng anh và bài nghe phù hợp, nhiều lúc phải chờ cả tháng mới thấy kênh đó có bài nghe mới|
-| 2 |Cần đọc, tổng hợp nhiều thông tin|Khi phải nói tiếng Anh trong tình huống thật (họp, thuyết trình), tôi muốn trả lời được ngay trong vài giây, để không bị khựng giữa câu|Bản thân|Luyện nói chỉ có một mình|
+| 2 |Cần đọc, tổng hợp nhiều thông tin|Khi phải nói tiếng Anh trong tình huống thật, tôi muốn trả lời được ngay trong vài giây, để không bị khựng giữa câu|Bản thân|Luyện nói chỉ có một mình|
 | 3 |Cần đọc, tổng hợp nhiều thông tin|Khi viết xong một đoạn tiếng Anh, tôi muốn biết câu nào sai ngữ pháp và sai vì sao, để không lặp lại lỗi đó ở bài sau|Bản thân|Tự soát 10 phút/bài mà vẫn sót ~10 lỗi (người chấm chỉ ra sau khi nộp), 2 bài/tuần; 3 lỗi lặp lại qua các bài gần nhất|
 | 4 |Cần đọc, tổng hợp nhiều thông tin|Khi luyện nói, tôi muốn biết mình phát âm một từ đúng hay sai, để không mang lỗi sai vào giao tiếp thật|Bản thân|Hôm qua có bài nghe phải nghe lại 5 lần để xem mình đọc có giống mẫu không|
 | 5 |Cần đọc, tổng hợp nhiều thông tin|Khi tự học tiếng Anh sau giờ học hoặc giờ làm, tôi muốn giữ được lịch học đã đặt ra, để không bỏ giữa chừng rồi phải học lại từ đầu|Bản thân|Tháng trước có 3 buổi định dùng để luyện nghe mà cuối cùng chán quá nên bỏ|
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
--
+- Không dùng AI để gợi ý thêm problem mới: cả 5 ý đều tự scan từ trải nghiệm tự học tiếng Anh. AI chỉ được dùng để rà và viết lại câu Job Story (xem mục 5, dòng CP1); cụm "(họp, thuyết trình)" AI tự thêm vào ý #2 đã bị bỏ.
 
 ---
 
@@ -161,10 +161,10 @@ HIỆN TẠI — khoảng 50 phút/bài, 2 bài/tuần
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | Nhờ Claude rà bảng scan tự viết (5 ý về học tiếng Anh), chỉ ra dòng nào là giải pháp trá hình, rồi viết lại câu Job Story từ dạng giải pháp sang dạng nhu cầu. Số liệu tự điền | Chỉ ra 4/5 dòng đang viết giải pháp vào phần "tôi muốn" ("nghe nhiều audio mới", "có người chấm bài", "có trò chơi"…); chỉ ra cột dấu hiệu thật đang đo thời gian học chứ chưa đo cái đau | Khi viết lại, AI tự đoán bối cảnh mình chưa nói tới (vd ý #2 thêm "họp, thuyết trình") | Tự điền số liệu thật cho các dòng (30 phút tìm bài, nghe lại 5 lần, bỏ 3 buổi/tháng, soát 10 phút vẫn sót ~10 lỗi) |
+| CP1 Scan | Nhờ Claude rà bảng scan tự viết (5 ý về học tiếng Anh), chỉ ra dòng nào là giải pháp trá hình, rồi viết lại câu Job Story từ dạng giải pháp sang dạng nhu cầu. Số liệu tự điền | Chỉ ra 4/5 dòng đang viết giải pháp vào phần "tôi muốn" ("nghe nhiều audio mới", "có người chấm bài", "có trò chơi"…); chỉ ra cột dấu hiệu thật đang đo thời gian học chứ chưa đo cái đau | Khi viết lại, AI tự đoán bối cảnh mình chưa nói tới (vd ý #2 thêm "họp, thuyết trình") | Tự điền số liệu thật cho các dòng (30 phút tìm bài, nghe lại 5 lần, bỏ 3 buổi/tháng, soát 10 phút vẫn sót ~10 lỗi); bỏ cụm "(họp, thuyết trình)" AI tự thêm vào ý #2 |
 | CP2 Problem Card | Hỏi Problem Card là gì; nhờ Claude soạn nháp card #2, #3 và sửa card #1 theo số liệu mình cung cấp; nhờ AI đóng vai "PM hoài nghi" phản biện và rà mâu thuẫn số liệu giữa các card | Chỉ ra các chỗ số liệu tự mâu thuẫn: bước nghe lại ~30 phút dài hơn cả buổi luyện 15 phút (card #2); metric lấy nhầm baseline 3 thay vì 10 (card #3); bước nghẽn ghi bước 4 nhưng lý do thuộc bước 5 (card #1) | Mẫu câu Impact AI đưa cho card #1 lấy phút × buổi/tuần nhưng ghi kết quả là giờ/tháng (sai đơn vị). Bản nháp AI tự suy ra vài điều mình chưa nói (vd "công cụ có sẵn vẫn sót lỗi"), làm card #3 tự mâu thuẫn; lỗi bước nghẽn của card #1 cũng nằm trong bản nháp do AI viết | Tự phát hiện lỗi đơn vị và sửa thành 3,5 giờ/tuần; tự cung cấp số liệu cho các card (7 buổi/tuần, ~25/30 phút ở vòng lặp tìm bài, ~20 từ/tuần, soát 10 phút vẫn sót ~10 lỗi…) và xác nhận số phút từng bước trong sơ đồ |
 | CP3 Hội tụ (chỉ định dạng và rà số liệu) | Không dùng AI cho pitch, câu hỏi phản biện, cluster, cây OST, chấm điểm và lý do chọn/loại. Chỉ nhờ Claude chuyển phần nhóm đã viết sang đúng bảng Markdown, sửa lỗi làm vỡ bảng, chép câu hỏi phản biện sang mục 4, và rà số liệu mục 2.4 với bảng 2.1 | Phát hiện dòng #9 ở bảng 2.1 bị xuống dòng làm vỡ bảng; phần giải thích và lý do loại #8 ghi "4 phút mỗi lần quay lại" trong khi bảng 2.1 là 10 phút/lần (4 phút chỉ là bước đọc lại); tên #7 không thống nhất giữa các mục; mục 4 ghi đã sửa card nhưng card chưa đổi | AI chỉ kiểm được định dạng và số liệu, không đánh giá được lập luận chọn/loại candidate (phần này nhóm tự làm) | Ghi các thay đổi sau phản biện vào cột "Điều còn chưa chắc" ở bảng top 3 cho khớp với mục 4; bỏ cụm "bổ sung ví dụ lỗi" ở card #3 vì chưa có ví dụ thật; sửa số phút của #8 thành 10 phút/lần |
-| CP4 Research | | | | |
+| CP4 Research (rà soát mục 3 báo cáo nhóm) | Nhờ Claude rà mục 3 báo cáo nhóm theo rubric và mở lại 5 link research để đối chiếu với phần trích | Phát hiện trang Zapier được trích không có thông tin "gói miễn phí kiểm tra 15 phút" và không nói đến lọc theo keyword; tìm ra trang giá Zapier xác nhận 15 phút/lần và gói Free không có Filter. Chỉ ra snapshot thiếu ngày và cách phỏng vấn | AI nghi Snapshot A là thành viên nhóm vì số liệu trùng với candidate #7, nhưng thực tế A là người ngoài nhóm | Xác nhận A là người ngoài nhóm, các buổi phỏng vấn làm trực tiếp ngày 09/11/2026; giữ snapshot A, chỉ bỏ câu gây hiểu nhầm. Thêm link trang giá Zapier làm nguồn và sửa phần trích cho khớp |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
