@@ -7,7 +7,7 @@
 
 - Tên nhóm: Nhom9999
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): (#7, Nguyễn Công Quân) Học viên học song song ở trường, khóa tiếng Anh và khóa AI mất khoảng 25 phút mỗi ngày để kiểm tra nhiệm vụ trên nhiều nền tảng và xếp thứ tự ưu tiên, nên khoảng 4 lần/tháng phải làm gấp sát deadline.
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -59,7 +59,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | | | | | | | | | |
 | | | | | | | | | |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #7 — Quản lý nhiệm vụ và deadline từ nhiều nền tảng (Nguyễn Công Quân)
 
 **Vì sao chọn:**
 
