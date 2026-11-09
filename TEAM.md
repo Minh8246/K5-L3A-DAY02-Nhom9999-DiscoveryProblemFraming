@@ -70,8 +70,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - `report/team/group_report.md`: mục 2.1 (candidate #7–#9 và câu hỏi tại #2, #5), mục 2.4 (candidate được chọn), mục 3.3 (bảng research).
 - `report/individual/2A202603675_NguyenCongQuan.md`: CP1, CP2 và mục 4 nhật ký tham gia CP3–CP4.
-- Commit cá nhân: `aba1090` (CP1), `7bae1df` (CP2); commit research CP4 sẽ bổ sung sau khi tạo.
+- Commit cá nhân: `aba1090` (CP1), `7bae1df` (CP2), `4319ccd` (CP4 Research).
 
 **Điều mình học được từ phần nhóm:**
-
-- [Tự bổ sung 1–2 câu từ trải nghiệm thật của bạn; không dùng AI viết thay.]
+- Tôi học được rằng nhóm không nên chọn vấn đề chỉ vì giải pháp nghe hấp dẫn, mà cần so sánh actor, quy trình, bottleneck và bằng chứng đo được trước khi quyết định.
