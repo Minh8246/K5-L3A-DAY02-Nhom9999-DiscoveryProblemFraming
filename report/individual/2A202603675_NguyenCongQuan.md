@@ -146,9 +146,9 @@ HIỆN TẠI — 30 phút/lần, 2 lần/tháng
 | Chọn candidate problem | Tôi cùng nhóm đối chiếu shortlist theo 7 tiêu chí. Candidate #7 đạt 34 điểm, cao nhất trong ba candidate được chấm. | Nhóm thống nhất chọn #7 vì actor/quy trình rõ, có baseline khoảng 25 phút/ngày và hậu quả khoảng 4 lần/tháng phải làm gấp. |
 | Kiểm chứng / research | Tôi phụ trách research ba hướng hiện có: Todoist để tập trung task, Zapier cho workflow Discord–Todoist và Motion để tự sắp lịch. Tôi đối chiếu tài liệu chính thức, bước được giải và khoảng trống. | Research cho thấy nên thử thay đổi quy trình hoặc workflow phạm vi nhỏ trước; việc thu thập task từ toàn bộ nguồn và chất lượng dữ liệu đầu vào vẫn là rủi ro cần kiểm chứng. |
 | Quy trình nhóm | Tôi dùng số liệu từ Problem Card #1 để chi tiết hóa quy trình hiện tại thành bốn bước có actor, input, output và thời gian; đồng thời xây dựng quy trình tương lai giả thuyết gồm Rule/Workflow, AI hỗ trợ và bước con người kiểm tra. | Nhóm có cơ sở so sánh trước/sau: từ khoảng 25 phút/ngày xuống mục tiêu tối đa 10 phút/ngày, với boundary và phương án quay về rõ ràng để đưa sang CP6 đánh giá. |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Problem Statement |Không dùng AI; không trực tiếp viết Problem Statement (xem mục 4). |Không ảnh hưởng |
+| Mức can thiệp AI |Không dùng AI  | Không ảnh hưởng|
+| Quyết định |không trực tiếp viết mục 6–8 (xem mục 4) |Không ảnh hưởng |
 
 ---
 
