@@ -266,13 +266,9 @@ Cách phản biện: nhờ Claude đóng vai "PM hoài nghi", đối chiếu b�
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-<<<<<<< HEAD
 Bài của nhóm nằm ở ô: **độ mơ hồ cao × độ phức tạp cao** nếu xét toàn bộ quy trình quản lý nhiệm vụ từ nhiều nền tảng, kể cả việc chọn ưu tiên. Khi tách phần người học giữ (chốt ưu tiên) khỏi phần hệ thống làm, và sửa quy trình để ghi nhiệm vụ vào một danh sách ngay khi nhận (No AI), phần cần tự động hóa nằm ở ô **độ mơ hồ thấp × độ phức tạp thấp**: "Rule hoặc Workflow đơn giản thường đủ".
-=======
-Bài của nhóm nằm ở ô:Độ mơ hồ cao × độ phức tạp cao (xét toàn bộ quy trình quản lý nhiệm vụ từ nhiều nền tảng).
->>>>>>> 77ffd18943955f42b511fb4e622aad098ca45ad7
 
-Vì sao: Học viên phải kiểm tra 5 nguồn thông tin và thực hiện nhiều bước liên tiếp từ nhận biết nhiệm vụ, xác định deadline, ước lượng khối lượng đến chọn thứ tự ưu tiên. Việc chọn ưu tiên không có một đáp án đúng duy nhất vì còn phụ thuộc thời gian rảnh và tình huống cá nhân. Tuy nhiên, những bước như kiểm tra trường dữ liệu thiếu hoặc nhắc hạn gần có quy tắc rõ ràng, nên không cần AI cho toàn bộ quy trình.
+Vì sao:
 
 - **Toàn bộ quy trình mơ hồ cao, phức tạp cao:** học viên phải kiểm tra 5 nguồn và làm nhiều bước liên tiếp, từ nhận biết nhiệm vụ, xác định deadline, ước lượng khối lượng đến chọn thứ tự ưu tiên; bước sau dùng kết quả bước trước (mục 4.1). Việc chọn ưu tiên không có một đáp án đúng duy nhất vì còn phụ thuộc thời gian rảnh và tình huống cá nhân.
 - **Phần mơ hồ nằm ở bước chốt ưu tiên, và Boundary ở mục 5 giao bước này cho người học.** Các đầu ra hệ thống cần tạo đều có đúng/sai rõ: nhiệm vụ có trong thông báo hay không, hạn ghi đúng hay sai, tổng giờ còn lại có vượt giờ rảnh trước hạn hay không. Những bước như kiểm tra trường dữ liệu thiếu hay nhắc hạn gần có quy tắc rõ ràng, nên không cần AI cho toàn bộ quy trình.
@@ -282,7 +278,6 @@ Vì sao: Học viên phải kiểm tra 5 nguồn thông tin và thực hiện nh
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-<<<<<<< HEAD
 | **No AI** (sửa quy trình) | Một danh sách tập trung duy nhất, quy tắc "ghi ngay khi nhận" với 4 trường: tên, hạn, nguồn, số giờ ước lượng. Mỗi ngày xem danh sách thay vì mở lần lượt 5 nền tảng; học viên tự chọn việc cần làm. | Nguyên nhân làm gấp chủ yếu là sót thông tin, người học giữ được thói quen ghi ngay (giả định #4) và tự xếp ưu tiên trong thời gian chấp nhận được. | Phụ thuộc hoàn toàn vào kỷ luật: dễ quên nhập hoặc không cập nhật danh sách (A có ghi chú nhưng không cập nhật đều). Người học vẫn phải tự cộng giờ còn lại và so với giờ rảnh, nên không chạm tới nguyên nhân ước lượng sai của B. Không có nhắc hạn. | Là nền của mức Rule (giữ quy tắc ghi ngay); một mình chưa đủ |
 | **Rule** | No AI cộng thêm: (1) tự sắp theo hạn và nhắc khi còn 48 giờ; (2) gắn cờ nhiệm vụ thiếu hạn hoặc chưa ước lượng giờ; (3) công thức cảnh báo quá tải: tổng giờ ước lượng còn lại của nhiệm vụ đó và các nhiệm vụ có hạn sớm hơn vượt tổng giờ rảnh người học khai từ hôm nay đến hạn → gắn cờ; (4) một luồng Zapier không có AI, chuyển tin nhắn mới trên kênh thông báo Discord của lớp thành task ứng viên. Dùng công cụ có sẵn (mục 3.3) và bảng tính. | Dữ liệu đã đầy đủ và các quy tắc cố định xử lý được phần lớn tình huống: phần lớn nhiệm vụ có hạn ghi rõ trong thông báo; người học nhập tay phần còn lại trong khoảng 4 phút/ngày (mục 4.2). | Phụ thuộc dữ liệu nhập: 4/5 nguồn vẫn nhập tay, cờ quá tải chỉ đúng khi số giờ ước lượng đúng. Luồng Discord tạo task rác vì gói Free không có Filter (mục 3.3). Quy tắc cứng chưa phản ánh hết thay đổi lịch và mức độ quan trọng của từng việc. | **Chọn**: pilot 6 tuần (mục 8.2) |
 | **Workflow** | Rule cộng thêm một bước AI, người học vẫn chốt. Hai phương án đã cân nhắc: (a) AI gợi ý thứ tự hoặc khung giờ làm cho các nhiệm vụ đã xác nhận, theo quy trình giả thuyết ở mục 4.2: tạo task ứng viên từ Discord → học viên đối chiếu 4 nguồn còn lại → Rule kiểm tra dữ liệu → AI gợi ý thứ tự/lịch → học viên xác nhận; (b) AI đọc thông báo viết tự do (Zalo, Cohort, web khóa AI, Discord), trích tên nhiệm vụ, hạn, nguồn thành task ứng viên. | (a) Sau pilot, danh sách đã đủ và cờ quá tải đúng mà tỉ lệ làm gấp do chọn ưu tiên sai vẫn không giảm, tức thứ tự theo hạn và cờ quá tải không đủ giúp cân nhắc khi nhiều nhiệm vụ trùng hạn hoặc quỹ thời gian thay đổi. (b) Sau pilot, bước nhập tay vẫn tốn trên 5 phút/ngày hoặc là nguyên nhân chính khiến nhiệm vụ bị sót. | (a) AI gợi ý thứ tự không phù hợp mà người học vẫn làm theo. (b) AI bỏ sót nhiệm vụ hoặc đọc sai hạn viết kiểu tương đối ("thứ 6 tuần sau"); phải đưa nội dung thông báo cho dịch vụ bên ngoài; nhóm chưa có bộ thông báo thật để chấm. Cả hai: task rác, deadline hoặc thời lượng sai từ đầu vào. | Not Yet (điều kiện ở mục 8.2) |
@@ -295,16 +290,6 @@ Vì sao: Học viên phải kiểm tra 5 nguồn thông tin và thực hiện nh
 **Vì sao chưa cần mức cao hơn:** CP4–CP5 chưa chứng minh Rule không đủ, nên phải thử Rule trước; nếu Rule đạt các tiêu chí đánh giá ở mục 7 thì không cần nâng lên Workflow có AI. Thứ tự theo hạn và cảnh báo quá tải có đúng/sai rõ và tính được bằng công thức, không cần AI dự đoán. Workflow (a) chỉ đáng thử nếu sau pilot người học vẫn chọn sai khi nhiều việc trùng hạn dù dữ liệu đã đủ; Workflow (b) chỉ đáng thử nếu bước nhập tay thành chỗ nghẽn (mục 4.2 kỳ vọng khoảng 4 phút) và có dữ liệu thật để chấm. Quyết định thứ tự cuối thuộc về người học (Boundary mục 5), nên không có bước nào cần AI tự quyết, tức không cần Agent.
 
 **Đối chiếu với quy trình giả thuyết ở mục 4.2:** bước 1 (đồng bộ và tạo task ứng viên từ Discord) là automation không có AI nên thuộc mức Rule. Bước 4 (đề xuất thứ tự/lịch) trong pilot làm bằng sắp theo hạn cộng cờ quá tải, tức Rule; phiên bản có AI của bước này là Workflow (a), đang Not Yet. Bước con người (2, 5), boundary và phương án quay về giữ nguyên.
-=======
-| **No AI** (sửa quy trình) |Dùng một checklist/lịch chung; học viên tự nhập nhiệm vụ, deadline, khối lượng và tự chọn việc cần làm.|Người học cập nhật đều và có thể tự xếp ưu tiên trong thời gian chấp nhận được.|Vẫn phải kiểm tra nhiều nguồn; dễ quên nhập hoặc không cập nhật danh sách.|Làm đối chứng|
-| **Rule** |Tự gắn cờ nhiệm vụ thiếu hạn, nhắc việc gần deadline, sắp xếp theo hạn và cảnh báo khi khối lượng vượt thời gian rảnh đã nhập.|Dữ liệu đã đầy đủ, các quy tắc cố định xử lý được phần lớn tình huống.|Phụ thuộc dữ liệu nhập; quy tắc cứng có thể chưa phản ánh hết thay đổi lịch và mức độ quan trọng của từng việc.|Thử trước|
-| **Workflow** |Quy trình cố định: tạo task ứng viên từ một kênh Discord phù hợp → học viên đối chiếu 4 nguồn còn lại → Rule kiểm tra dữ liệu → AI gợi ý thứ tự/lịch làm → học viên xác nhận.|Cần hỗ trợ cân nhắc nhiều nhiệm vụ cùng lúc nhưng vẫn có thể định trước các bước và giữ người học quyết định cuối.|Task rác từ Discord; thiếu hoặc sai deadline/thời lượng; AI gợi ý ưu tiên không phù hợp.|Đề xuất pilot có điều kiện|
-| **Agent** |AI tự chọn nền tảng, công cụ và bước tiếp theo để tìm nhiệm vụ, lập kế hoạch và điều chỉnh.|Chỉ phù hợp nếu quy trình không thể định trước và cần AI tự quyết các bước thực hiện.|Khó kiểm soát, có thể truy cập sai phạm vi hoặc tự thay đổi thông tin quan trọng.|Không|
-
-**Mức chọn:Đề xuất thử nghiệm Workflow có AI hỗ trợ một bước (đề xuất thứ tự/lịch làm), không dùng Agent và không giao AI quyền quyết định cuối. Đây là phương án cần nhóm xác nhận sau khi so sánh với No AI và Rule, chưa phải mức đã được chứng minh hiệu quả.**
-
-**Vì sao không chọn mức đơn giản hơn:No AI và Rule có thể giải quyết việc tập trung nhiệm vụ, nhắc deadline và cảnh báo thiếu dữ liệu. Tuy nhiên, nhóm muốn kiểm tra xem khi nhiều nhiệm vụ trùng hạn hoặc quỹ thời gian thay đổi, bước AI đề xuất có giúp học viên cân nhắc nhanh và phù hợp hơn quy tắc cố định hay không. CP4–CP5 chưa chứng minh Rule không đủ, vì vậy phải thử Rule làm đối chứng; nếu Rule đạt các tiêu chí đánh giá thì không cần nâng lên Workflow có AI.**
->>>>>>> 77ffd18943955f42b511fb4e622aad098ca45ad7
 
 ### 6.3. AI Canvas rút gọn
 
@@ -312,7 +297,6 @@ Không bắt buộc vì nhóm chọn mức Rule (theo hướng dẫn worksheet C
 
 | Thành phần | Nội dung (bước AI gợi ý thứ tự, Workflow a, đang Not Yet) |
 |---|---|
-<<<<<<< HEAD
 | **Prediction** — AI dự đoán / tạo ra gì? | Đề xuất thứ tự hoặc khung thời gian làm các nhiệm vụ đã xác nhận, kèm lý do theo deadline, khối lượng còn lại và thời gian rảnh; cảnh báo trường hợp có nguy cơ không kịp hạn. Không tự suy đoán deadline bị thiếu. |
 | **Judgment** — con người cân nhắc, quyết định gì? | Học viên đối chiếu với thông báo gốc, kiểm tra hạn và khối lượng, xem xét lịch cá nhân, rồi chấp nhận hoặc sửa thứ tự đề xuất. |
 | **Action** — hành động cuối cùng là gì, ai làm? | Học viên chốt kế hoạch, tự điều chỉnh và thực hiện nhiệm vụ; AI không tự sửa deadline, xóa task, gửi tin nhắn hay nộp bài. |
@@ -326,19 +310,6 @@ Không bắt buộc với mức Rule, nhưng nhóm vẫn trả lời vì hai câ
 
 - **Augment hay automate:** augment. Trong CP4, A khó tổng hợp và chọn ưu tiên ("xem xong vẫn phân vân"); B biết hạn nhưng ước lượng thiếu thời gian; C vẫn làm gấp dù có danh sách và đã tự chọn việc cho hôm sau; chính card #7 ghi "tôi vẫn kiểm tra và quyết định thứ tự cuối cùng". Hệ thống có thể hỗ trợ tổng hợp, cảnh báo và gợi ý, nhưng không thay người học quyết định. Các buổi phỏng vấn chưa hỏi trực tiếp việc có muốn giao quyền cho AI hay không, nên augment là định hướng thiết kế cần kiểm chứng thêm, không phải kết quả xác nhận của cả 3 người. Vì vậy hệ thống mức Rule chỉ sắp theo hạn và gắn cờ, người học chốt thứ tự.
 - **Báo nhầm hay bỏ sót tệ hơn:** bỏ sót nhiệm vụ hoặc hạn gấp tệ hơn, vì học viên có thể phát hiện quá muộn, phải làm gấp hoặc nộp thiếu (tình huống A). Báo nhầm cũng gây hại vì task rác làm mất thời gian kiểm tra, nhưng mỗi task rác chỉ tốn vài giây để loại. Thiết kế nghiêng về tránh bỏ sót: giữ trường nguồn để mở lại thông báo gốc; gắn cờ "chưa rõ hạn" thay vì bỏ qua; nhắc khi còn dưới 48 giờ; luồng Discord lấy mọi tin nhắn trên kênh thông báo nhưng chỉ tạo task ứng viên, không đưa thẳng vào danh sách chính; người học duyệt, sửa, loại task sai và có thể quay về checklist thủ công.
-=======
-| **Prediction** — AI dự đoán / tạo ra gì? |Đề xuất thứ tự hoặc khung thời gian làm các nhiệm vụ đã xác nhận, kèm lý do theo deadline, khối lượng còn lại và thời gian rảnh; cảnh báo trường hợp có nguy cơ không kịp hạn. Không tự suy đoán deadline bị thiếu.|
-| **Judgment** — con người cân nhắc, quyết định gì? |Học viên đối chiếu với thông báo gốc, kiểm tra hạn và khối lượng, xem xét lịch cá nhân, rồi chấp nhận hoặc sửa thứ tự đề xuất.|
-| **Action** — hành động cuối cùng là gì, ai làm? |Học viên chốt kế hoạch, tự điều chỉnh và thực hiện nhiệm vụ; AI không tự sửa deadline, xóa task, gửi tin nhắn hay nộp bài.|
-| **Outcome** — đo kết quả bằng gì? |Bấm giờ từ lúc mở nguồn đầu tiên đến khi chốt kế hoạch (ước lượng hiện tại khoảng 25 phút/ngày, mục tiêu tối đa 10 phút/ngày); theo dõi tỉ lệ nhiệm vụ phải làm gấp trên tổng nhiệm vụ có hạn và số nhiệm vụ bị bỏ sót/biết muộn. Baseline tỉ lệ chưa có, cần đo bằng nhật ký.|
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? |Tên nhiệm vụ, nguồn/thông báo gốc, deadline, phần việc hoặc thời lượng còn lại, thời gian rảnh và trạng thái hoàn thành. Thông tin đang phân tán ở 5 nguồn; người học phải kiểm tra 4 nguồn chưa hỗ trợ, xác nhận dữ liệu và bổ sung những trường còn thiếu trước khi AI đề xuất.|
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? |Ghi nhận gợi ý nào được học viên chấp nhận, sửa hoặc bỏ; đối chiếu với nhật ký deadline và lý do thực tế của từng lần làm gấp. Đây là nguồn đánh giá để điều chỉnh quy trình, chưa phải dữ liệu huấn luyện đã thu thập.|
-
-### 6.4. Hai câu hỏi của Google PAIR
-
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:Người dùng muốn được hỗ trợ (augment) hay giao hẳn việc (automate)? Bằng chứng: Đề xuất augment. Trong CP4, học viên A khó tổng hợp và chọn ưu tiên; B biết hạn nhưng ước lượng thiếu thời gian; C vẫn phải làm gấp dù có danh sách vì ít thời gian rảnh. Điều này cho thấy hệ thống có thể hỗ trợ tổng hợp, cảnh báo và gợi ý, nhưng không thể thay người học quyết định hoàn toàn. Các cuộc phỏng vấn chưa hỏi trực tiếp việc có muốn giao quyền cho AI hay không, nên lựa chọn augment là định hướng thiết kế cần kiểm chứng thêm, không phải kết quả xác nhận của cả 3 người.
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:AI sai kiểu nào tệ hơn, báo nhầm hay bỏ sót? Vì sao, và thiết kế đã xử lý thế nào: Bỏ sót nhiệm vụ hoặc hạn gấp nghiêm trọng hơn, vì học viên có thể phát hiện quá muộn, phải làm gấp hoặc nộp thiếu (như tình huống A). Báo nhầm cũng gây hại vì làm danh sách có task rác và mất thời gian kiểm tra. Vì vậy, hệ thống phải giữ liên kết tới nguồn gốc, gắn cờ hạn chưa rõ, yêu cầu học viên duyệt task ứng viên và cảnh báo việc còn dưới 48 giờ đến hạn. Không tự đưa mọi tin nhắn Discord vào danh sách chính; người học có thể sửa, loại task sai và quay về checklist thủ công.
->>>>>>> 77ffd18943955f42b511fb4e622aad098ca45ad7
 
 ---
 
