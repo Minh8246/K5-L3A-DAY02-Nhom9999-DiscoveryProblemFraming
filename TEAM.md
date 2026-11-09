@@ -6,7 +6,7 @@
 
 - Tên nhóm: Nhom9999
 - Candidate problem nhóm chọn (1 câu): (#7) Học viên học song song ở trường, khóa tiếng Anh và khóa AI mất khoảng 25 phút mỗi ngày để kiểm tra nhiệm vụ trên nhiều nền tảng và xếp thứ tự ưu tiên, nên khoảng 4 lần/tháng phải làm gấp sát deadline.
-- Quyết định cuối (Go / Not Yet / No-Go): Go, phạm vi nhỏ: pilot 6 tuần ở mức Rule, không dùng AI; bước AI trích nhiệm vụ từ thông báo: Not Yet.
+- Quyết định cuối (Go / Not Yet / No-Go): Go, phạm vi nhỏ: pilot 6 tuần ở mức Rule, không dùng AI; hai bước AI (gợi ý thứ tự, trích nhiệm vụ từ thông báo): Not Yet.
 
 ## Thành viên
 
@@ -68,13 +68,15 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Điền thông tin nhóm, vai trò và phân công theo checkpoint trong `TEAM.md`.
 - Rà soát mục 3 (CP4): mở lại link research, bổ sung nguồn trang giá Zapier, bổ sung thời gian và cách phỏng vấn cho các snapshot.
 - Viết Problem Statement v0 (mục 5, CP5): 6 trường dựa trên quy trình nháp card #7 của Quân và 3 snapshot CP4; nhờ AI phản biện, sửa 3 điểm ngay ở v0 và chuyển 3 điểm (metric tỉ lệ, guardrail sót nhiệm vụ, phạm vi actor) sang v1 cho CP6; đối chiếu mục 5 với quy trình mục 4 của Quân và sửa 2 chỗ lệch.
+- Viết quyết định CP6 (mục 8): chấm 4 rủi ro cho giải pháp mức Rule, quyết định Go phạm vi nhỏ (pilot 6 tuần), để hai bước AI (gợi ý thứ tự, trích nhiệm vụ) ở Not Yet với điều kiện cụ thể, đặt 4 ngưỡng dừng; viết mục 9 (hạn chế, hướng tiếp theo) và mục 10 (tài liệu tham khảo).
+- Tổng kết báo cáo: ghép mục 6 của Thái (đề xuất Workflow có AI gợi ý thứ tự) với quyết định mức Rule ở mục 8: giữ lập luận ma trận, AI Canvas và câu trả lời PAIR của Thái, đưa phương án của Thái thành Workflow (a) ở Not Yet; viết mục 7 (Problem Statement v1, 5 tiêu chí đánh giá), đưa 3 điểm phản biện đã hoãn ở mục 5 vào v1; rà lại toàn bài cho thống nhất.
 - Review và merge 15 PR của nhóm vào `main`.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4), mục 5 (Problem Statement v0 và bảng phản biện).
-- `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2, mục 4 nhật ký tham gia CP3–CP5 và mục 5 dùng AI đến CP5.
-- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm), `a1e4ca4` (rà soát CP4), `fef8440` (Problem Statement v0).
+- `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4), mục 5 (Problem Statement v0 và bảng phản biện), mục 6 (ghép với phần của Thái), mục 7 (Problem Statement v1, tiêu chí đánh giá), mục 8 (4 rủi ro, quyết định, ngưỡng dừng), mục 9–10.
+- `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2, mục 4 nhật ký tham gia CP3–CP6 và mục 5 dùng AI.
+- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm), `a1e4ca4` (rà soát CP4), `fef8440` (Problem Statement v0), `3be068d` (quyết định CP6).
 
 **Điều mình học được từ phần nhóm:**
 
