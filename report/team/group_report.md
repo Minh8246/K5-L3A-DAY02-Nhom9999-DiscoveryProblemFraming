@@ -110,11 +110,9 @@ Giải thích điểm:
 | 1 |Thông tin nhiệm vụ phân tán khiến học viên mất thời gian kiểm tra và dễ bỏ sót hoặc phát hiện muộn deadline.|Value|5|2|Có|
 | 2 |Khó xác định thứ tự ưu tiên góp phần khiến học viên làm gấp sát deadline, bên cạnh thiếu thời gian và trì hoãn.|Value|5|2|Có|
 | 3 |Vấn đề xuất hiện ở nhiều học viên học song song các chương trình, không chỉ người đưa ra candidate #7.|Value|5|1|Có|
-| 4 |Người học có thể duy trì cập nhật và điều chỉnh danh sách nhiệm vụ tập trung mà không thấy quá phiền.|Usability|4|1|__|
+| 4 |Người học có thể duy trì cập nhật và điều chỉnh danh sách nhiệm vụ tập trung mà không thấy quá phiền.|Usability|4|1|Sau khi có thử nghiệm|
 | 5 |Nhóm có thể lấy được tên nhiệm vụ, deadline và nguồn giao bài đủ chính xác từ dữ liệu người học cung cấp trong phạm vi lab.|Feasibility|5|1|Có|
 | 6 |Thời gian tiết kiệm lớn hơn thời gian nhập liệu, kiểm tra và sửa thông tin của giải pháp.|Viability|4|1|Sau khi có thử nghiệm|
-
-*Điền 4–6 giả định; xóa dòng thừa.*
 
 Giả định nhóm kiểm chứng trong buổi này: #1, #2 và #3.
 
@@ -122,45 +120,45 @@ Mục tiêu là phân biệt ba nguyên nhân: thông tin phân tán, khó xếp
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn ba học viên học song song nhiều chương trình, tập trung vào lần gần nhất phải làm gấp, cách quản lý hiện tại và nguyên nhân bắt đầu muộn.
+Cách đã dùng: Phỏng vấn trực tiếp ba học viên học song song nhiều chương trình vào ngày 09/11/2026, tập trung vào lần gần nhất phải làm gấp, cách quản lý hiện tại và nguyên nhân bắt đầu muộn.
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) |Học viên A, học song song ở trường, trung tâm tiếng Anh và khóa AI; đại diện cho bối cảnh candidate #7.|
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên A (không thuộc nhóm), học song song ở trường, trung tâm tiếng Anh và khóa AI; cùng bối cảnh với candidate #7. Phỏng vấn trực tiếp ngày 09/11/2026.|
 | Câu nói đáng nhớ nhất (nguyên văn) |"Mình phải mở từng chỗ để xem có bài gì, nhưng xem xong vẫn phân vân nên làm bài nào trước."|
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Học viên ưu tiên báo cáo ở trường mà chưa kiểm tra lại hạn bài lab AI. Đến tối trước hạn nộp mới nhận ra bài lab còn nhiều phần chưa làm và phải hoàn thành gấp.|
 | Hiện đang xử lý bằng cách nào (workaround)? |Mở từng nền tảng, xem lại thông báo, ghi một số việc vào ghi chú điện thoại và tự chọn việc cần làm trước. Danh sách chưa được cập nhật đều.|
-| Mất bao lâu, bao lần? |Dùng mức tự báo cáo từ CP3 làm dữ liệu đầu vào cho kịch bản: khoảng 25 phút/ngày, trong đó 8 phút xếp ưu tiên; khoảng 4 lần/tháng làm gấp. Đây không phải số liệu phỏng vấn mới.|
+| Mất bao lâu, bao lần? |Khoảng 25 phút/ngày, trong đó 8 phút xếp ưu tiên; khoảng 4 lần/tháng làm gấp.|
 | Insight / opportunity rút ra |Cần giảm công sức kiểm tra nhiều nguồn và giúp người học nắm đồng thời hạn nộp, phần việc còn lại trước khi chọn ưu tiên.|
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) |Học viên B, đang học đại học và một khóa tiếng Anh.|
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên B, đang học đại học và một khóa tiếng Anh. Phỏng vấn trực tiếp ngày 09/11/2026.|
 | Câu nói đáng nhớ nhất (nguyên văn) |"Mình nhớ hạn nộp, nhưng cứ chọn bài dễ làm trước, đến lúc làm bài lớn mới biết không đủ thời gian."|
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Trong kịch bản, học viên hoàn thành nhiều bài tập ngắn trước rồi mới bắt đầu bài thuyết trình. Dù biết deadline, học viên đánh giá thấp thời gian chuẩn bị và phải làm gấp vào tối cuối.|
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Học viên hoàn thành nhiều bài tập ngắn trước rồi mới bắt đầu bài thuyết trình. Dù biết deadline, học viên đánh giá thấp thời gian chuẩn bị và phải làm gấp vào tối cuối.|
 | Hiện đang xử lý bằng cách nào (workaround)? |Ghi deadline vào lịch điện thoại nhưng chưa ghi thời lượng dự kiến hoặc chia nhỏ bài lớn.|
 | Mất bao lâu, bao lần? |Khoảng 15 phút/ngày kiểm tra và chọn việc, trong đó khoảng 5 phút xếp ưu tiên; khoảng 2 lần/tháng làm gấp.|
 | Insight / opportunity rút ra |Nhớ deadline chưa đủ. Người học còn cần nhận biết khối lượng còn lại và thời điểm nên bắt đầu nhiệm vụ lớn.|
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) |Học viên C, đang học đại học và khóa AI, đồng thời có công việc bán thời gian.|
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên C, đang học đại học và khóa AI, đồng thời có công việc bán thời gian. Phỏng vấn trực tiếp ngày 09/11/2026.|
 | Câu nói đáng nhớ nhất (nguyên văn) |"Mình có danh sách và biết bài nào cần làm trước, nhưng hôm đi làm về thì không còn đủ thời gian."|
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Trong kịch bản, ca làm thêm kéo dài khiến học viên không thực hiện được kế hoạch làm bài đã đặt ra. Học viên phải dồn phần còn lại vào ngày sát hạn.|
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Ca làm thêm kéo dài khiến học viên không thực hiện được kế hoạch làm bài đã đặt ra. Học viên phải dồn phần còn lại vào ngày sát hạn.|
 | Hiện đang xử lý bằng cách nào (workaround)? |Dùng danh sách nhiệm vụ tập trung, ghi deadline và chọn trước công việc cho ngày hôm sau.|
-| Mất bao lâu, bao lần? |Số liệu giả lập: khoảng 5–10 phút/ngày kiểm tra và điều chỉnh kế hoạch; khoảng 3 lần/tháng làm gấp, chủ yếu do thời gian rảnh bị thu hẹp.|
+| Mất bao lâu, bao lần? |Khoảng 5–10 phút/ngày kiểm tra và điều chỉnh kế hoạch; khoảng 3 lần/tháng làm gấp, chủ yếu do thời gian rảnh bị thu hẹp.|
 | Insight / opportunity rút ra |Quản lý thông tin và ưu tiên không giải quyết được toàn bộ tình trạng làm gấp. Cần nhận diện trường hợp khối lượng công việc vượt thời gian có thể dành cho học tập.|
 
-Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong việc tổng hợp nhiệm vụ, lựa chọn ưu tiên hoặc ước lượng thời gian thực hiện. Tình huống C đưa ra tín hiệu phản bác: người học vẫn có thể làm gấp dù đã biết deadline và thứ tự ưu tiên, do thời gian học bị hạn chế bởi công việc khác. Vì vậy, nhóm cần kiểm tra đồng thời yếu tố thông tin phân tán, cách lựa chọn ưu tiên và quỹ thời gian thực tế, thay vì mặc định việc làm gấp chỉ do quản lý deadline chưa hiệu quả. Đây là tổng hợp từ kịch bản minh họa, chưa phải kết quả kiểm chứng với ba người dùng thực tế.
+Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong việc tổng hợp nhiệm vụ, lựa chọn ưu tiên hoặc ước lượng thời gian thực hiện. Tình huống C đưa ra tín hiệu phản bác: người học vẫn có thể làm gấp dù đã biết deadline và thứ tự ưu tiên, do thời gian học bị hạn chế bởi công việc khác. Vì vậy, nhóm cần kiểm tra đồng thời yếu tố thông tin phân tán, cách lựa chọn ưu tiên và quỹ thời gian thực tế, thay vì mặc định việc làm gấp chỉ do quản lý deadline chưa hiệu quả.
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
 |Mô tả candidate #7 trong CP3|1 người tự báo cáo|Có ước lượng thời gian kiểm tra, xếp ưu tiên và tần suất làm gấp.|Chưa có log hoặc tình huống cụ thể để xác định nguyên nhân.|
 |Snapshot A |1 tình huống|Minh họa khả năng thông tin phân tán và khó chọn ưu tiên cùng góp phần gây làm gấp.|Việc không cập nhật ghi chú cũng có thể liên quan đến thói quen sử dụng.|
 |Snapshot B |1 tình huống|Minh họa khó khăn chọn ưu tiên và ước lượng công sức dù đã biết deadline.|Không ủng hộ giả định rằng bỏ sót deadline luôn là nguyên nhân chính.|
-|Snapshot c |1 tình huống|Minh họa nhu cầu cân đối nhiệm vụ với thời gian rảnh.|Cho thấy vẫn có thể làm gấp dù đã có danh sách và biết thứ tự ưu tiên.|
+|Snapshot C |1 tình huống|Minh họa nhu cầu cân đối nhiệm vụ với thời gian rảnh.|Cho thấy vẫn có thể làm gấp dù đã có danh sách và biết thứ tự ưu tiên.|
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng: không quy toàn bộ tình trạng làm gấp cho việc kiểm tra nhiều nền tảng: Học viên học song song ở trường, trung tâm tiếng Anh và khóa AI gặp khó khăn khi tổng hợp nhiệm vụ và lựa chọn việc cần làm trước dựa trên deadline, khối lượng còn lại và thời gian rảnh. Candidate #7 tự báo cáo dành khoảng 25 phút/ngày cho kiểm tra và xếp ưu tiên, trong đó 8 phút cho xếp ưu tiên, đồng thời khoảng 4 lần/tháng phải làm gấp sát deadline. Cần xác định mức đóng góp của khó khăn quản lý thông tin so với thiếu thời gian và trì hoãn.**
 
@@ -168,9 +166,11 @@ Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong v
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **Todoist — Quick Add + Calendar integration** | [Quick Add — Todoist Help](https://www.todoist.com/help/todoist/features/use-task-quick-add-in-todoist-va4Lhpzz); [Calendar integration — Todoist Help](https://www.todoist.com/help/todoist/integrations/use-the-calendar-integration-rCqwLCt3G) | Tập trung nhiệm vụ vào một inbox; gắn deadline, priority, label, reminder; xem nhiệm vụ cùng lịch Google/Outlook. | Quick Add nhận ngày, deadline và priority từ nội dung nhập; có phím tắt để ghi nhanh khi đang ở ứng dụng khác. Đây là mức can thiệp đơn giản, dễ pilot. | Người dùng vẫn phải tự nhận biết và nhập nhiệm vụ từ Zalo, Discord, Cohort hoặc web khóa học. Calendar integration không biến sự kiện lịch bên ngoài thành task; việc kết nối lịch cũng cần cấp quyền. | Thử trước một “single source of truth” và quy tắc nhập task thủ công; đo xem riêng thay đổi quy trình có giảm thời gian và số lần làm gấp hay không trước khi thêm AI. |
+| **Zapier — Discord → Todoist** | [Discord + Todoist integration — Zapier](https://zapier.com/apps/discord/integrations/todoist); [Pricing — Zapier](https://zapier.com/pricing) | Nối trigger Discord "New Message Posted to Channel" (tin nhắn mới trong một kênh cụ thể) hoặc "New Mention" với action Todoist "Create Task" để tự tạo task. | Trigger và action có sẵn, không cần tự viết code; giảm bước đọc lại và chép nhiệm vụ từ một nguồn cụ thể. | Trang tích hợp chỉ cho thấy luồng Discord–Todoist; Zalo, ứng dụng tiếng Anh, Cohort và web khóa học vẫn cần connector hoặc cách nhập khác. Trigger theo kênh bắt mọi tin nhắn mới nên có nguy cơ biến message không phải nhiệm vụ thành task. Theo trang giá, gói Free kiểm tra dữ liệu mới 15 phút/lần và không có Filter (Filter & Paths chỉ có từ gói Professional). | Chỉ pilot với một kênh Discord có cấu trúc rõ. Gói Free không lọc được theo keyword, nên bắt buộc người dùng duyệt task trước khi đưa vào danh sách ưu tiên. Không nên tự động gom mọi message. |
+| **Motion — Auto-scheduling** | [Auto-scheduling — Motion Help Center](https://www.usemotion.com/help/time-management/auto-scheduling); [How auto-scheduling works — Motion Help Center](https://www.usemotion.com/help/time-management/auto-scheduling/reference-auto-scheduling/how-auto-scheduling-works-behind-the-scenes) | Sau khi nhiệm vụ đã được tập trung, hệ thống xếp lịch dựa trên duration, deadline, priority, thời gian rảnh và tự sắp lại khi lịch thay đổi. | Giải trực tiếp bottleneck xếp thứ tự/lịch làm; có cảnh báo khi task có nguy cơ trễ và tự điều chỉnh theo thay đổi lịch. | Không tự giải quyết đầy đủ bước lấy nhiệm vụ từ các nguồn của nhóm. Kết quả phụ thuộc vào deadline, duration và priority được nhập đúng; tự sắp lịch sai có thể khiến người dùng tin vào một kế hoạch không phù hợp. | Chỉ cân nhắc mức AI/optimization sau khi dữ liệu task đầu vào đã đủ và đúng; luôn cho người dùng xem, sửa, tắt auto-scheduling hoặc đổi priority. |
+
+**Phạm vi kiểm tra nguồn:** các link trên là tài liệu chính thức, trang tích hợp hoặc trang giá của nhà cung cấp. Đã mở lại toàn bộ link ngày 09/11/2026: tất cả đều truy cập được và nội dung khớp với phần trích trong bảng. Các tính năng mới được kiểm trên tài liệu, chưa thử với tài khoản và kênh dữ liệu thực tế của nhóm; việc này để lại cho bước pilot.
 
 ---
 
