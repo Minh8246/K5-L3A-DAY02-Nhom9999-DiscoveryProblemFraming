@@ -36,23 +36,32 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### HaHuyThai-2A202603682
 
 **Phần việc phụ trách:**
 
--
+-Phụ trách kiểm chứng CP4 (phỏng vấn), mức can thiệp AI và Problem Statement v1 (CP6); hỗ trợ quy trình trước/sau CP5 và quyết định CP6.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+-Chuẩn bị và pitch ba candidate #4–#6 (kiểm tra file trước khi nộp, tìm lỗi Python, so sánh kết quả train); đặt câu hỏi phản biện cho các candidate #1, #3, #7 và #9.
+- Phụ trách kiểm chứng CP4: xây dựng assumption map, tổng hợp các interview snapshot và xác định những giả định cần kiểm chứng thêm.
+- Hỗ trợ xây dựng quy trình trước/sau CP5, xác định bước nghẽn, phần việc con người cần kiểm tra và phương án quay về khi AI sai.
+- Thực hiện CP6 (mục 6): phân tích ma trận độ mơ hồ × độ phức tạp, so sánh No AI / Rule / Workflow / Agent, xây dựng AI Canvas và trả lời hai câu hỏi Google PAIR.
+- Đề xuất Workflow có AI hỗ trợ xếp thứ tự ưu tiên, đồng thời phân tích hạn chế của Rule và rủi ro khi AI bỏ sót nhiệm vụ.
+- Xây dựng Problem Statement v1 và các tiêu chí đánh giá đầu ra; phối hợp với nhóm rà soát để thống nhất với quyết định Go phạm vi nhỏ ở mức Rule, hai bước AI giữ ở Not Yet.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+-report/team/group_report.md: mục 2.1 (candidate #4–#6 và các câu hỏi phản biện), mục 3 (kiểm chứng CP4), mục 4 (hỗ trợ quy trình), mục 6 (ma trận, bảng so sánh, AI Canvas, Google PAIR), mục 7 (Problem Statement v1, tiêu chí đánh giá).
+
+- report/individual/2A202603682_HaHuyThai.md: CP1, CP2 và các phần nhật ký tham gia, sử dụng AI cần cập nhật theo công việc thực tế.
+
+- Commit: bổ sung mã commit cá nhân sau khi push phần CP4(fbcc6b1) và CP6(77ffd18) lên GitHub.
 
 **Điều mình học được từ phần nhóm:**
 
--
+-Tôi hiểu rằng không phải vấn đề nào cũng cần dùng AI. Cần xác định rõ bước nghẽn, có số liệu kiểm chứng và thử giải pháp đơn giản trước. Qua CP6, tôi học được cách so sánh các mức can thiệp AI, đánh giá rủi ro và giữ con người kiểm tra những quyết định quan trọng.
 
 ### VuQuangMinh-2A202603657
 
@@ -70,19 +79,17 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Viết Problem Statement v0 (mục 5, CP5): 6 trường dựa trên quy trình nháp card #7 của Quân và 3 snapshot CP4; nhờ AI phản biện, sửa 3 điểm ngay ở v0 và chuyển 3 điểm (metric tỉ lệ, guardrail sót nhiệm vụ, phạm vi actor) sang v1 cho CP6; đối chiếu mục 5 với quy trình mục 4 của Quân và sửa 2 chỗ lệch.
 - Viết quyết định CP6 (mục 8): chấm 4 rủi ro cho giải pháp mức Rule, quyết định Go phạm vi nhỏ (pilot 6 tuần), để hai bước AI (gợi ý thứ tự, trích nhiệm vụ) ở Not Yet với điều kiện cụ thể, đặt 4 ngưỡng dừng; viết mục 9 (hạn chế, hướng tiếp theo) và mục 10 (tài liệu tham khảo).
 - Tổng kết báo cáo: ghép mục 6 của Thái (đề xuất Workflow có AI gợi ý thứ tự) với quyết định mức Rule ở mục 8: giữ lập luận ma trận, AI Canvas và câu trả lời PAIR của Thái, đưa phương án của Thái thành Workflow (a) ở Not Yet; viết mục 7 (Problem Statement v1, 5 tiêu chí đánh giá), đưa 3 điểm phản biện đã hoãn ở mục 5 vào v1; rà lại toàn bài cho thống nhất.
-- Review và merge 20 PR vào `main` (9 PR của Thái và Quân, 11 PR của mình).
+- Review và merge 15 PR của nhóm vào `main`.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4), mục 5 (Problem Statement v0 và bảng phản biện), mục 6 (ghép với phần của Thái), mục 7 (Problem Statement v1, tiêu chí đánh giá), mục 8 (4 rủi ro, quyết định, ngưỡng dừng), mục 9–10.
 - `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2, mục 4 nhật ký tham gia CP3–CP6 và mục 5 dùng AI.
-- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm), `a1e4ca4` (rà soát CP4), `fef8440`, `5916d47` (Problem Statement v0, đối chiếu với mục 4.1), `3be068d` (quyết định CP6), `a1e9e12` (ghép mục 6, Problem Statement v1).
+- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm), `a1e4ca4` (rà soát CP4), `fef8440` (Problem Statement v0), `3be068d` (quyết định CP6).
 
 **Điều mình học được từ phần nhóm:**
 
-- Mức can thiệp phải đi từ thấp lên: khi ghép mục 6 của Thái (đề xuất Workflow có AI gợi ý thứ tự) với mục 8, chính phần của Thái ghi Rule chưa được chứng minh là không đủ. Nhóm chốt Rule và để bước AI ở Not Yet kèm điều kiện đo được, thay vì thêm AI chỉ vì nghe hợp lý.
-- Tín hiệu phản bác đáng giá hơn tín hiệu xác nhận: C vẫn làm gấp dù đã có danh sách và biết thứ tự, nên v1 đổi metric chính sang tỉ lệ làm gấp tách theo nguyên nhân và giới hạn phạm vi pilot. Nếu bỏ qua C, metric ở v0 sẽ tính cả những lần làm gấp mà giải pháp không chạm tới.
-- Các mục trong báo cáo phụ thuộc nhau nên thứ tự viết quan trọng: viết mục 8 trước khi mục 6–7 chốt làm pilot thiếu cờ "thiếu hạn / chưa ước lượng giờ", phải rà lại. Mỗi lần ghép phần của người khác cần đối chiếu chéo các mục với nhau.
+-
 
 ### NguyenCongQuan-2A202603675
 
