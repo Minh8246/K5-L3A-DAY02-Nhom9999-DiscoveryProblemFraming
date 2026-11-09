@@ -181,36 +181,56 @@ Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong v
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — 4 bước, khoảng 25 phút/ngày (dao động 15–30 phút), 4/4 bước thủ công
 
+[1. Mở và kiểm tra 5 nền tảng: 7']
+→ [2. Liệt kê nhiệm vụ: 5']
+→ [3. Kiểm tra deadline và khối lượng: 5']
+→ [4. Xếp thứ tự ưu tiên: 8'] ← BOTTLENECK
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Học viên | Zalo, Discord, ứng dụng tiếng Anh, Cohort và web khóa học | Các thông báo và nội dung có thể chứa nhiệm vụ | Khoảng 7 phút, mỗi ngày | Mở lần lượt 5 nguồn; hoàn toàn thủ công. |
+| 2 | Học viên | Nội dung vừa đọc và ghi nhớ tạm thời | Danh sách nhiệm vụ ban đầu | Khoảng 5 phút, mỗi ngày | Tự nhận biết đâu là nhiệm vụ và chép lại; chưa có nơi tập trung được cập nhật đều. |
+| 3 | Học viên | Danh sách nhiệm vụ và thông tin ở từng nguồn | Danh sách có deadline và ước lượng khối lượng còn lại | Khoảng 5 phút, mỗi ngày | Có thể phải quay lại nguồn nếu thiếu deadline hoặc yêu cầu. |
+| 4 | Học viên | Deadline, khối lượng còn lại và thời gian rảnh trong ngày | Thứ tự công việc dự kiến thực hiện | Khoảng 8 phút, mỗi ngày | **Bottleneck:** phải cân nhắc nhiều yếu tố bằng trí nhớ; không có handoff, học viên tự quyết định và tự thực hiện. |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Bước 4 — xác định và xếp thứ tự việc cần làm trước, khoảng 8 phút/ngày. Học viên phải so sánh đồng thời deadline, khối lượng còn lại và thời gian rảnh; CP4 cũng cho thấy chỉ biết deadline chưa đủ và thiếu thời gian vẫn có thể làm kế hoạch thất bại.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI (GIẢ THUYẾT ĐỂ ĐÁNH GIÁ Ở CP6) — 5 bước, kỳ vọng tối đa 10 phút/ngày
 
+[1. Đồng bộ danh sách tập trung + tạo task ứng viên từ Discord: ~1'] ← RULE/WORKFLOW
+→ [2. Kiểm tra 4 nguồn chưa hỗ trợ và Quick Add task còn thiếu: ~4'] ← CON NGƯỜI
+→ [3. Kiểm tra trường bắt buộc, gắn cờ thiếu deadline/thời lượng: ~1'] ← RULE
+→ [4. Đề xuất thứ tự/lịch làm từ deadline, thời lượng và thời gian rảnh: ~1'] ← AI/OPTIMIZATION
+→ [5. Kiểm tra task, sửa dữ liệu và chốt kế hoạch: ~3'] ← CON NGƯỜI
+
+BOUNDARY: Workflow/AI không tự thay đổi deadline chính thức, không tự xóa hoặc đánh dấu
+hoàn thành nhiệm vụ, không tự chốt thứ tự cuối và không gửi/nộp bài thay học viên.
+Mọi task được nhập tự động và lịch đề xuất phải được học viên kiểm tra trước khi dùng.
+
+PHƯƠNG ÁN QUAY VỀ: nếu tích hợp hoặc AI sai/ngừng hoạt động, học viên dùng danh sách
+tập trung như checklist/lịch chung, nhập task bằng Quick Add và tự sắp theo deadline,
+khối lượng, thời gian rảnh. Nếu Discord tạo task rác, tắt workflow và nhập thủ công.
 ```
+
+Đây là quy trình tương lai giả thuyết, chưa phải quyết định chọn AI. Các mốc thời gian sau là kỳ vọng cần đo bằng cách bấm giờ trong pilot; CP6 phải so sánh phương án này với No AI và Rule trước khi chốt mức can thiệp.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 4 | 5 | Tách bước kiểm tra dữ liệu và bước con người phê duyệt để giữ quyền kiểm soát. |
+| Tổng thời gian | Khoảng 25 phút/ngày, dao động 15–30 phút | Kỳ vọng tối đa 10 phút/ngày | Target từ Problem Card #1; phải đo lại khi pilot. |
+| Số bước thủ công | 4/4 | 2/5 | Con người vẫn kiểm tra các nguồn chưa hỗ trợ và chốt kế hoạch cuối. |
+| Bottleneck chính | Xếp thứ tự ưu tiên, khoảng 8 phút | Kiểm tra dữ liệu và chốt kế hoạch, kỳ vọng khoảng 3 phút | Bottleneck mới là điểm kiểm soát cần giữ, không nên tự động hóa hoàn toàn. |
+| Rủi ro mới phát sinh | Chưa có rủi ro tự động hóa; dễ quên hoặc phát hiện muộn task | Bỏ sót nguồn chưa hỗ trợ; Discord tạo task rác; deadline/thời lượng nhập sai; AI xếp lịch không phù hợp | Giảm rủi ro bằng cờ thiếu dữ liệu, bước duyệt của con người, quyền tắt workflow và phương án quay về. |
 
 ---
 
@@ -218,16 +238,27 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Học viên học song song từ hai chương trình trở lên (trường, trung tâm tiếng Anh, khóa AI). Họ nhận nhiệm vụ từ nhiều nền tảng (với candidate #7 là 5 nền tảng: Zalo, Discord, ứng dụng tiếng Anh, Cohort, web khóa AI) và mỗi ngày tự quyết nên làm việc nào trước. Bằng chứng: candidate #7 (Quân) và 3 học viên được phỏng vấn ở CP4 (A, B, C). |
+| **Quy trình** | Đầu ngày hoặc trước mỗi phiên học, tổng khoảng 25 phút/ngày (dao động 15–30): (1) mở lần lượt 5 nền tảng xem thông báo mới: 7' → (2) liệt kê nhiệm vụ vào ghi chú: 5' → (3) kiểm tra deadline và khối lượng từng việc: 5' → (4) xếp thứ tự ưu tiên, chọn việc làm hôm nay: 8'. Sau đó học viên làm theo thứ tự đã chọn (không tính vào 25 phút). Các bước và số phút khớp với mục 4.1, lấy từ quy trình nháp của candidate #7 (báo cáo cá nhân của Quân, CP2). |
+| **Bottleneck** | Bước 4, xếp thứ tự ưu tiên: khoảng 8 phút/ngày. Đây là bước quyết định làm việc nào trước, nhưng đầu vào thường thiếu. Danh sách ở bước 1–2 có thể sót việc ở nền tảng chưa mở lại (A ưu tiên báo cáo ở trường vì chưa kiểm lại hạn bài lab AI). Ở bước 3, khối lượng còn lại chỉ được ước lượng theo cảm tính và chưa đối chiếu với thời gian rảnh thực tế (B biết hạn nhưng đánh giá thấp thời gian chuẩn bị bài thuyết trình). Bước 1–2 tốn nhiều phút hơn (12') nhưng chỉ là chi phí thời gian; bước 4 mới là nơi chọn sai dẫn đến làm gấp. |
+| **Impact** | Candidate #7 mất khoảng 25 phút/ngày (khoảng 175 phút/tuần) chỉ để kiểm tra và chọn việc, và khoảng 4 lần/tháng phải làm gấp sát deadline nên kết quả chưa đầy đủ. Cả 3 người được phỏng vấn cũng làm gấp 2–4 lần/tháng (A: 4, B: 2, C: 3). Chưa tách được bao nhiêu lần làm gấp do thông tin phân tán hoặc chọn ưu tiên sai, bao nhiêu lần do thiếu thời gian (C vẫn làm gấp dù đã có danh sách và biết thứ tự). |
+| **Success Metric** (baseline → target, cách đo) | **Chính, số lần làm gấp:** baseline khoảng 4 lần/tháng (candidate #7 tự ước lượng theo trí nhớ tháng gần nhất) → target tối đa 1 lần/tháng.<br>**Phụ, thời gian kiểm tra và xếp ưu tiên:** baseline khoảng 25 phút/ngày (tự ước lượng, dao động 15–30) → target tối đa 10 phút/ngày.<br>**Cách đo:** (a) bấm giờ mỗi lần kiểm tra, từ lúc mở nền tảng đầu tiên đến lúc chốt việc làm hôm nay; (b) nhật ký deadline, mỗi nhiệm vụ một dòng: ngày giao, ngày biết đến, hạn, ngày bắt đầu, ngày xong, có làm gấp không. "Làm gấp" là khi phần lớn khối lượng phải làm trong 24 giờ cuối trước hạn, hoặc nộp chưa đủ phần yêu cầu. Ghi 2 tuần trước khi thay đổi quy trình để có baseline đo thật, rồi so với 4 tuần sau khi thay đổi. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | **AI (nếu nhóm chọn dùng ở CP6) không được:** tự quyết thứ tự ưu tiên hay việc làm hôm nay (chỉ được đề xuất kèm lý do); tự thêm, sửa hoặc xoá nhiệm vụ và deadline trong danh sách chính khi người học chưa xác nhận; tự đoán deadline khi thông báo không ghi rõ (phải đánh dấu "chưa rõ hạn"); tự gửi tin nhắn, nộp bài hay trả lời giảng viên và nhóm trên bất kỳ nền tảng nào; đọc tin nhắn cá nhân ngoài các kênh và thông báo người học chủ động đưa vào.<br>**Con người kiểm tra (HITL) khi:** (1) có nhiệm vụ mới, trước khi đưa vào danh sách ưu tiên: xác nhận tên, hạn, nguồn; (2) deadline chưa rõ hoặc hai nguồn ghi khác nhau: mở thông báo gốc để đối chiếu; (3) nhiệm vụ còn dưới 48 giờ đến hạn, hoặc khối lượng còn lại có thể vượt thời gian rảnh trước hạn: người học tự quyết chia nhỏ, cắt bớt hay xin gia hạn. Ước lượng khối lượng và thời gian rảnh luôn do người học đưa ra hoặc xác nhận, AI không tự ước lượng thay. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+Cách phản biện: nhờ Claude đóng vai "PM hoài nghi", đối chiếu bản nháp Problem Statement v0 với kết quả kiểm chứng ở mục 3 và checklist CP5. Các điểm "sửa ngay ở v0" đã có trong bảng trên; các điểm "đưa vào v1" để lại cho CP6.
+
+| # | Điểm AI phản biện | Đồng ý? | Xử lý |
+|---:|---|---|---|
+| 1 | Cả hai baseline (25 phút/ngày, 4 lần/tháng) là ước lượng theo trí nhớ của 1 người, chưa có log. Nếu baseline sai thì đạt target 4 → 1 cũng không chứng minh được gì. | Đồng ý | Sửa ngay ở v0: ghi rõ nguồn và tính chất tự ước lượng của baseline; thêm 2 tuần ghi nhật ký và bấm giờ trước khi thay đổi quy trình để có baseline đo thật. |
+| 2 | Số lần làm gấp/tháng phụ thuộc số deadline trong tháng: tháng ít bài thì tự giảm mà không nhờ thay đổi gì. Ngoài ra C làm gấp vì thiếu thời gian, nguyên nhân mà việc tổng hợp hay xếp ưu tiên không chạm tới. | Đồng ý | Đưa vào v1 (CP6): đổi metric chính thành tỉ lệ nhiệm vụ làm gấp trên tổng nhiệm vụ có hạn trong kỳ; nhật ký ghi thêm nguyên nhân mỗi lần làm gấp (sót thông tin / chọn ưu tiên sai / ước lượng sai khối lượng / thiếu thời gian) và báo cáo riêng từng nhóm nguyên nhân. Dùng tỉ lệ cũng giải quyết việc kỳ baseline (2 tuần) và kỳ so sánh (4 tuần) dài khác nhau. |
+| 3 | Metric phụ chỉ đo tốc độ: kiểm tra nhanh hơn có thể kéo theo sót nhiệm vụ nhiều hơn mà metric vẫn "đạt". | Đồng ý | Đưa vào v1: thêm guardrail "số nhiệm vụ bị sót hoặc biết đến khi còn dưới 48 giờ đến hạn không tăng so với 2 tuần baseline", lấy từ cột "ngày biết đến" trong nhật ký. |
+| 4 | Bottleneck chọn bước 4 (8') trong khi bước 1–2 cộng lại tốn 12'. Có đang đặt nghẽn sai chỗ không? | Đồng ý một phần | Giữ bước 4 vì đây là bước dẫn đến hậu quả (chọn sai việc → làm gấp), còn bước 1–2 là chi phí thời gian. Sửa ngay ở v0: ghi rõ lý do này và số phút của bước 1–2 trong ô Bottleneck. |
+| 5 | Bản nháp Boundary chỉ ghi "AI không tự quyết, con người kiểm tra", chưa nói kiểm khi nào nên không kiểm được. | Đồng ý | Sửa ngay ở v0: liệt kê 3 tình huống bắt buộc con người kiểm tra (nhiệm vụ mới; deadline chưa rõ hoặc lệch nguồn; còn dưới 48 giờ hoặc quá tải). |
+| 6 | Actor gộp cả người làm gấp vì thiếu thời gian (C). Với nhóm này, cải thiện việc tổng hợp và xếp ưu tiên có thể không có tác dụng. | Đồng ý một phần | Chưa thu hẹp actor ở v0 vì mới có 1/3 snapshot. Sau 2 tuần baseline, nếu phần lớn lần làm gấp do thiếu thời gian thì v1 thu hẹp actor hoặc ghi rõ phần này nằm ngoài phạm vi. |
+| 7 | Target tối đa 1 lần/tháng chưa có căn cứ; dữ liệu 1 tháng của 1 người quá ít để tách thay đổi thật khỏi dao động ngẫu nhiên. | Đồng ý một phần | Giữ target của candidate #7 làm mục tiêu ban đầu vì do chính người gặp vấn đề đặt; xem lại sau khi có baseline đo thật. |
+| 8 | Kiểm tra Problem Statement có lẫn giải pháp không. | — | Đạt: 6 trường không nêu tên công cụ hay tính năng; Boundary chỉ nói AI nếu được chọn ở CP6. Khi rà lại đã sửa thêm chữ "nhập" ở Boundary (ngầm giả định có công cụ nhập liệu) thành "đưa ra hoặc xác nhận". |
 
 ---
 
