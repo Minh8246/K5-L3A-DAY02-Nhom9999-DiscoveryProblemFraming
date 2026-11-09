@@ -6,7 +6,7 @@
 
 - Tên nhóm: Nhom9999
 - Candidate problem nhóm chọn (1 câu): (#7) Học viên học song song ở trường, khóa tiếng Anh và khóa AI mất khoảng 25 phút mỗi ngày để kiểm tra nhiệm vụ trên nhiều nền tảng và xếp thứ tự ưu tiên, nên khoảng 4 lần/tháng phải làm gấp sát deadline.
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Quyết định cuối (Go / Not Yet / No-Go): Go, phạm vi nhỏ: pilot 6 tuần ở mức Rule, không dùng AI; bước AI trích nhiệm vụ từ thông báo: Not Yet.
 
 ## Thành viên
 

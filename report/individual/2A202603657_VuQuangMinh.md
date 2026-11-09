@@ -153,7 +153,7 @@ HIỆN TẠI — khoảng 50 phút/bài, 2 bài/tuần
 | Quy trình nhóm | | |
 | Problem Statement | Người chính Problem Statement v0 (CP5): viết 6 trường dựa trên quy trình nháp card #7 của Quân và 3 snapshot CP4; nhờ AI phản biện bản nháp | Bottleneck giữ ở bước xếp ưu tiên nhưng ghi rõ lý do; baseline được ghi là tự ước lượng và thêm 2 tuần nhật ký để đo thật; Boundary có 3 tình huống bắt buộc con người kiểm tra. Ba điểm (metric tỉ lệ, guardrail sót nhiệm vụ, phạm vi actor) chuyển sang v1 cho CP6 |
 | Mức can thiệp AI | | |
-| Quyết định | | |
+| Quyết định | Người chính mục 8: chấm 4 rủi ro cho giải pháp mức Rule, ra quyết định và đặt 4 ngưỡng dừng; điền quyết định cuối ở mục 1 và `TEAM.md`; viết mục 9 (hạn chế) và mục 10 (tài liệu tham khảo) | Quyết định Go phạm vi nhỏ: pilot 6 tuần mức Rule không dùng AI (2 tuần baseline, 4 tuần pilot); bước AI trích nhiệm vụ để Not Yet với 2 điều kiện cụ thể; không rủi ro nào ở mức Cao |
 
 ---
 

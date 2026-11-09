@@ -8,7 +8,7 @@
 - Tên nhóm: Nhom9999
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): (#7, Nguyễn Công Quân) Học viên học song song ở trường, khóa tiếng Anh và khóa AI mất khoảng 25 phút mỗi ngày để kiểm tra nhiệm vụ trên nhiều nền tảng và xếp thứ tự ưu tiên, nên khoảng 4 lần/tháng phải làm gấp sát deadline.
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: Go, phạm vi nhỏ: pilot 6 tuần ở mức Rule, không dùng AI; bước AI trích nhiệm vụ từ thông báo: Not Yet (xem mục 8).
 
 ---
 
@@ -337,31 +337,70 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+Chấm cho giải pháp được chọn: mức **Rule**, không dùng AI trong pilot (lập luận chọn mức ở mục 6).
+
+| Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
+|---|---|---|---|
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Cả 4 người (candidate #7 và A, B, C) đều tự báo cáo làm gấp 2–4 lần/tháng. A và B làm gấp vì những nguyên nhân giải pháp chạm tới được: sót thông tin, ước lượng sai khối lượng. Nhưng C làm gấp vì thiếu thời gian, điều giải pháp này không giải được. Mọi baseline đều là tự báo cáo theo trí nhớ, chưa có nhật ký. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Giải pháp dựa vào việc người học tự ghi nhiệm vụ vào một danh sách ngay khi nhận (giả định #4, bằng chứng 1/5). Tín hiệu theo hai chiều: C đã duy trì được danh sách tập trung, còn A có ghi chú nhưng không cập nhật đều. Đầu ra của Rule (danh sách sắp theo hạn, cảnh báo quá tải) dễ hiểu và người học tự sửa được vì không có bước AI. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Không cần xây gì. Danh sách tập trung, ghi nhanh và nhắc hạn có sẵn trong công cụ quản lý việc (Todoist, mục 3.3); luồng Discord → danh sách có sẵn trên Zapier, không cần code; công thức cảnh báo quá tải (giờ ước lượng còn lại so với giờ rảnh trước hạn) làm được bằng bảng tính. Khoảng trống: 4/5 nguồn (Zalo, ứng dụng tiếng Anh, Cohort, web khóa AI) chưa có connector nên vẫn nhập tay, đã tính vào bước 2 ở mục 4.2. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Trung bình | Chi phí và pháp lý thấp: pilot dùng Zapier gói Free (kiểm tra 15 phút/lần, không có Filter, mục 3.3) và công cụ sẵn có; người học tự vận hành; chỉ nối kênh thông báo của lớp, không đưa tin nhắn cá nhân trên Zalo vào dịch vụ bên ngoài. Điểm chưa chắc là thời gian duy trì danh sách có nhỏ hơn thời gian tiết kiệm được không (giả định #6, bằng chứng 1/5). |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Go, phạm vi nhỏ: pilot 6 tuần giải pháp mức Rule, không dùng AI. Riêng bước dùng AI để trích nhiệm vụ từ thông báo: Not Yet.
 
-**Lý do:**
+**Lý do:** Không rủi ro nào ở mức Cao. Ba rủi ro Trung bình (Value, Usability, Viability) đều đo được ngay trong pilot bằng nhật ký deadline và bấm giờ đã định ở mục 5. Nhóm chưa có bằng chứng mức Rule không đủ nên chưa thêm AI, theo nguyên tắc chọn mức đơn giản nhất đủ dùng. Pilot cũng trả lời câu hỏi CP4 còn bỏ ngỏ: bao nhiêu lần làm gấp do thông tin và cách xếp ưu tiên, bao nhiêu lần do thiếu thời gian.
 
 **Nếu Go — pilot nhỏ nhất:**
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+- Người tham gia: candidate #7 (Quân), mời thêm A và B vì nguyên nhân làm gấp của họ nằm trong phạm vi giải pháp.
+- Tuần 1–2 (baseline): giữ cách làm cũ, chỉ ghi nhật ký deadline và bấm giờ kiểm tra như mục 5.
+- Tuần 3–6 (pilot): (1) một danh sách tập trung duy nhất, ghi nhiệm vụ ngay khi nhận với tên, hạn, nguồn, số giờ ước lượng; (2) sắp theo hạn và nhắc khi còn 48 giờ; (3) công thức cảnh báo khi tổng giờ ước lượng còn lại vượt giờ rảnh trước hạn; (4) một luồng Zapier chỉ cho kênh thông báo Discord của lớp, task tạo ra là task ứng viên, người học duyệt rồi mới đưa vào danh sách. Không xây gì, không dùng AI.
+- Đo mỗi tuần: tỉ lệ nhiệm vụ làm gấp và nguyên nhân từng lần; số phút kiểm tra và duy trì danh sách mỗi ngày; số nhiệm vụ bị sót hoặc biết đến khi còn dưới 48 giờ.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Áp dụng cho bước AI trích nhiệm vụ và hạn từ thông báo viết tự do (Zalo, Cohort, web khóa AI). Chỉ xét sau pilot, khi có đủ 2 điều: (1) bước nhập tay từ các nguồn chưa có connector vẫn tốn trên 5 phút/ngày (mục 4.2 kỳ vọng khoảng 4 phút) hoặc là nguyên nhân chính khiến nhiệm vụ bị sót; (2) nhóm gom được ít nhất 20 thông báo thật (đã che thông tin cá nhân) để chấm đầu ra của AI trước khi dùng.
+
+**Nếu No-Go — nên làm gì thay AI:** Không áp dụng cho quyết định chung. Riêng mức Agent (AI tự đọc các nền tảng, tự tạo task, tự xếp lịch) là No-Go vì cần quyền đọc tin nhắn cá nhân và đi ngược Boundary ở mục 5.
 
 **Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+
+- Nếu trong 2 tuần đầu pilot, người học không mở và cập nhật danh sách từ 3 ngày/tuần trở lên, thì dừng và quay về cách cũ (mở từng nền tảng, ghi chú điện thoại), xem lại quy tắc ghi nhiệm vụ, vì giả định #4 sai.
+- Nếu thời gian kiểm tra và duy trì danh sách bằng hoặc hơn baseline đo ở tuần 1–2 trong 2 tuần liên tiếp, thì quay về cách cũ, vì giải pháp tốn công hơn mức tiết kiệm (giả định #6 sai).
+- Nếu số nhiệm vụ bị sót hoặc biết đến khi còn dưới 48 giờ tăng so với 2 tuần baseline, thì tắt luồng Discord tự động và nhập tay toàn bộ; nếu sau 1 tuần vẫn tăng thì dừng pilot.
+- Nếu sau 4 tuần pilot, tỉ lệ làm gấp do sót thông tin, chọn ưu tiên sai hoặc ước lượng sai không giảm so với baseline, thì kết luận No-Go cho hướng tổng hợp và xếp ưu tiên, không lên Workflow hay AI. Nếu phần lớn lần làm gấp do thiếu thời gian, chuyển sang hướng quản lý quỹ thời gian học.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+**Hạn chế:**
+
+- Baseline (25 phút/ngày, 4 lần/tháng) là số tự ước lượng theo trí nhớ của 1 người; 3 snapshot cũng là tự báo cáo. Chưa có nhật ký hay log nào.
+- Kiểm chứng chỉ có 3 buổi phỏng vấn, cùng bối cảnh học viên; chưa có survey để biết bao nhiêu người gặp vấn đề này.
+- Chưa tách được tỉ lệ các nguyên nhân làm gấp (sót thông tin, chọn ưu tiên sai, ước lượng sai khối lượng, thiếu thời gian). C cho thấy có trường hợp nằm ngoài phạm vi giải pháp.
+- Các công cụ ở mục 3.3 mới được kiểm trên tài liệu, chưa thử với tài khoản và kênh thật; 4/5 nguồn chưa có cách lấy nhiệm vụ tự động.
+
+**Hướng tiếp theo:**
+
+- Chạy pilot 6 tuần ở mục 8.2; sau pilot cập nhật baseline, target và phạm vi actor theo số đo thật.
+- Nếu bước nhập tay vẫn là chỗ nghẽn, thử Workflow có AI trích nhiệm vụ từ thông báo, chấm trên bộ thông báo thật trước khi dùng.
+- Nếu phần lớn lần làm gấp do thiếu thời gian, đổi outcome sang quản lý quỹ thời gian học thay vì quản lý thông tin.
 
 ## 10. Tài liệu tham khảo
 
--
+**Research giải pháp (mục 3.3), mở lại ngày 09/11/2026:**
+
+- Todoist Help — [Use Task Quick Add in Todoist](https://www.todoist.com/help/todoist/features/use-task-quick-add-in-todoist-va4Lhpzz); [Use the Calendar integration](https://www.todoist.com/help/todoist/integrations/use-the-calendar-integration-rCqwLCt3G)
+- Zapier — [Discord + Todoist integration](https://zapier.com/apps/discord/integrations/todoist); [Pricing](https://zapier.com/pricing)
+- Motion Help Center — [Auto-scheduling](https://www.usemotion.com/help/time-management/auto-scheduling); [How auto-scheduling works behind the scenes](https://www.usemotion.com/help/time-management/auto-scheduling/reference-auto-scheduling/how-auto-scheduling-works-behind-the-scenes)
+
+**Framework đã dùng** (theo [docs/03-international-frameworks.md](../../docs/03-international-frameworks.md)):
+
+- Intercom, Alan Klement — [Job Stories](https://www.intercom.com/blog/accidentally-invented-job-stories/) (CP1–CP2)
+- Teresa Torres — [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) (CP3); [The Interview Snapshot](https://www.producttalk.org/interview-snapshot/) (CP4)
+- David Bland — [Assumptions mapping](https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter) (CP4)
+- Rob Fitzpatrick — [The Mom Test](https://www.momtestbook.com/) (CP4)
+- Jeff Gothelf — [Business Problem Statement](https://jeffgothelf.com/blog/business-problem-statement-opportunity-statement/) (CP5)
+- Anthropic — [Building effective agents](https://www.anthropic.com/research/building-effective-agents) (CP6, chọn mức can thiệp)
+- Marty Cagan, SVPG — [The Four Big Risks](https://www.svpg.com/four-big-risks/) (CP6, quyết định)
