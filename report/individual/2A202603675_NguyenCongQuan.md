@@ -21,7 +21,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 | Lặp lại / Pain từ người khác | Khi chuẩn bị bữa tối cho gia đình, tôi muốn xác định món ăn phù hợp, để có thể bắt đầu nấu mà không mất nhiều thời gian cân nhắc và trả lời lại câu hỏi hôm nay ăn gì. | Tôi và 6 người ăn trong gia đình | Tôi mất khoảng 10–15 phút để nghĩ món, xảy ra 4–5 lần/tuần; hôm nào em trai nấu thì thường hỏi “hôm nay nấu gì?”. |
-| 2 | Tốn thời gian | Khi bắt đầu một ngày có nhiều nhiệm vụ từ trường, khóa học tiếng Anh và khóa học AI thực chiến, tôi muốn biết việc nào cần ưu tiên và thời hạn của từng việc, để hoàn thành đầy đủ thay vì phải làm gấp khi gần deadline. | Tôi | Tôi mất khoảng 30 phút/ngày để kiểm tra toàn bộ nhiệm vụ; trong tháng gần nhất có khoảng 4 lần tôi phải làm gấp cho kịp hạn nên kết quả chưa thực sự đầy đủ. |
+| 2 | Tốn thời gian | Khi bắt đầu một ngày có nhiều nhiệm vụ từ trường, khóa học tiếng Anh và khóa học AI thực chiến, tôi muốn biết việc nào cần ưu tiên và thời hạn của từng việc, để hoàn thành đầy đủ thay vì phải làm gấp khi gần deadline. | Tôi | Tôi mất khoảng 25 phút/ngày (dao động 15–30 phút) để kiểm tra toàn bộ nhiệm vụ; trong tháng gần nhất có khoảng 4 lần tôi phải làm gấp cho kịp hạn nên kết quả chưa thực sự đầy đủ. |
 | 3 | Tốn thời gian | Khi quay lại một công việc đang làm dở, tôi muốn biết chính xác mình đã làm đến đâu và bước tiếp theo là gì, để có thể tiếp tục công việc ngay. | Tôi | Mỗi lần quay lại tôi mất khoảng 10 phút để tìm trạng thái công việc; tình huống này xảy ra khoảng 3 lần/tuần. |
 | 4 | Cần đọc, tổng hợp nhiều thông tin | Khi bắt đầu làm một bài lab, tôi muốn hiểu đầy đủ yêu cầu từ các nguồn liên quan, để không bỏ sót đầu ra hoặc quy định nộp bài. | Tôi và các thành viên cùng làm bài lab | Mỗi hôm làm lab tôi mất khoảng 15 phút để kiểm tra 5 nguồn: repo, slide, LMS, Discord và Outlook. |
 | 5 | Lặp lại / Cần tổng hợp thông tin | Khi tổng hợp chi tiêu trong tháng, tôi muốn xác định mục đích và phân loại các giao dịch ngân hàng, để biết tiền đã được sử dụng vào đâu và đánh giá việc chi tiêu có hợp lý hay không. | Tôi | Tôi kiểm tra và ghi lại giao dịch 2 lần/tháng, mỗi lần khoảng 30 phút, tổng cộng khoảng 1 giờ/tháng; trong tháng vừa rồi có khoảng 5 giao dịch tôi không nhớ rõ đã chi vào việc gì. |
@@ -139,12 +139,12 @@ HIỆN TẠI — 30 phút/lần, 2 lần/tháng
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
+| Pitch Problem Card | Tôi trình bày ba candidate #7 quản lý nhiệm vụ/deadline, #8 tiếp tục báo cáo đang làm dở và #9 phân loại giao dịch chi tiêu, kèm actor, bottleneck và số liệu hiện có. | Candidate #7 được đưa vào shortlist và sau đó được nhóm chọn để làm tiếp. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Với candidate #2, người học xác định phát âm đúng/sai bằng cách nào và việc nghe lại nhiều lần có phải do thiếu cách đánh giá không? Với candidate #5, khó khăn chính là hiểu thông báo lỗi hay tìm cách sửa, và công cụ giải thích lỗi có đủ nếu thiếu kiến thức Python nền tảng không? | Giúp nhóm tách biểu hiện bề mặt khỏi nguyên nhân và nhận ra candidate #5 còn thiếu số liệu về tần suất/thời gian. |
+| Nhận phản biện | Câu hỏi tôi nhận được từ Hà Huy Thái: cách hiện tại tôi quản lý deadline là gì, vì sao chưa hiệu quả, và việc làm gấp là do không biết ưu tiên hay do khối lượng công việc quá nhiều? | Tôi ghi nhận không được mặc định “xếp ưu tiên” là nguyên nhân duy nhất; CP4 cần kiểm chứng riêng giả định về thông tin phân tán, cách ưu tiên và tình trạng quá tải. |
+| Gom cluster / cây OST | Tôi cung cấp ba candidate #7–#9 cùng số liệu; nhóm xếp chúng vào cluster C “Quản lý công việc và thông tin cá nhân”. Tôi cùng nhóm phân biệt opportunity với các solution như chatbot, ứng dụng quản lý hay AI Agent. | OST tập trung vào outcome giảm tình trạng làm gấp sát deadline và ba opportunity: ưu tiên, nắm deadline và cân đối tiến độ. |
+| Chọn candidate problem | Tôi cùng nhóm đối chiếu shortlist theo 7 tiêu chí. Candidate #7 đạt 34 điểm, cao nhất trong ba candidate được chấm. | Nhóm thống nhất chọn #7 vì actor/quy trình rõ, có baseline khoảng 25 phút/ngày và hậu quả khoảng 4 lần/tháng phải làm gấp. |
+| Kiểm chứng / research | Tôi phụ trách research ba hướng hiện có: Todoist để tập trung task, Zapier cho workflow Discord–Todoist và Motion để tự sắp lịch. Tôi đối chiếu tài liệu chính thức, bước được giải và khoảng trống. | Research cho thấy nên thử thay đổi quy trình hoặc workflow phạm vi nhỏ trước; việc thu thập task từ toàn bộ nguồn và chất lượng dữ liệu đầu vào vẫn là rủi ro cần kiểm chứng. |
 | Quy trình nhóm | | |
 | Problem Statement | | |
 | Mức can thiệp AI | | |
@@ -158,7 +158,7 @@ HIỆN TẠI — 30 phút/lần, 2 lần/tháng
 |---|---|---|---|---|
 | CP1 Scan | Hỗ trợ tách các tình huống tôi tự scan và diễn đạt lại theo Job Story. | Giúp phân biệt problem với solution và nhắc bổ sung số liệu đo được. | Ban đầu giữ hai ý “yêu cầu bài lab” và “thông tin khóa học” dù chúng khá trùng nhau; một số gợi ý chưa có bằng chứng thật. | Tôi nhận ra điểm trùng, thay ý thứ hai bằng vấn đề chi tiêu có số liệu thật và loại các ý chưa kiểm chứng. |
 | CP2 Problem Card | Hỗ trợ cấu trúc ba card, chuyển mô tả quy trình thành sơ đồ và đóng vai PM hoài nghi để phản biện. | Giúp làm rõ actor, bottleneck, baseline–target và phương án không AI. | Ban đầu AI chỉ chú ý metric thời gian và đề xuất phân bổ thời gian từng bước trước khi tôi xác nhận. | Tôi xác nhận lại thời gian theo trải nghiệm, bổ sung metric số lần phải làm gấp và giữ Workflow chỉ là giả thuyết để nhóm phản biện. |
-| CP4 Research | | | | |
+| CP4 Research | Dùng AI để tìm và so sánh các pattern quản lý tập trung, workflow trigger–action và auto-scheduling; sau đó truy về tài liệu chính thức. | Giúp lập bảng so sánh theo đúng bước quy trình, điểm mạnh, khoảng trống và bài học thay vì chỉ liệt kê tên công cụ. | Kết quả tìm kiếm và trang giới thiệu sản phẩm có thể nhấn mạnh lợi ích nhưng không chứng minh công cụ hỗ trợ toàn bộ nguồn dữ liệu của nhóm. | Tôi giới hạn claim theo tài liệu chính thức, ghi rõ phần nào chỉ giải Discord hoặc yêu cầu nhập task trước, và yêu cầu tự mở/kiểm tra link trước khi chốt. |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
