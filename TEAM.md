@@ -4,7 +4,7 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Nhom9999
 - Candidate problem nhóm chọn (1 câu):
 - Quyết định cuối (Go / Not Yet / No-Go):
 
@@ -12,10 +12,9 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | Vũ Quang Minh | 2A202603657 | | Minh8246 |
+| 2 | Hà Huy Thái | 2A202603682 | | |
+| 3 | Nguyễn Công Quân | 2A202603675 | | |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
