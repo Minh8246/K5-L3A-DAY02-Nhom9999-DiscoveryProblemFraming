@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603657_VuQuangMinh
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -20,11 +20,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+| 1 |Cần đọc, tổng hợp nhiều thông tin|Khi luyện nghe tiếng Anh, tôi muốn tìm được bài nghe vừa trình độ và đúng chủ đề mình cần, để không phí thời gian vào bài quá khó hoặc đã nghe rồi|Bản thân|Mất 30 phút để tìm kênh tiếng anh và bài nghe phù hợp, nhiều lúc phải chờ cả tháng mới thấy kênh đó có bài nghe mới|
+| 2 |Cần đọc, tổng hợp nhiều thông tin|Khi phải nói tiếng Anh trong tình huống thật (họp, thuyết trình), tôi muốn trả lời được ngay trong vài giây, để không bị khựng giữa câu|Bản thân|Luyện nói chỉ có một mình|
+| 3 |Cần đọc, tổng hợp nhiều thông tin|Khi viết xong một đoạn tiếng Anh, tôi muốn biết câu nào sai ngữ pháp và sai vì sao, để không lặp lại lỗi đó ở bài sau|Bản thân|Tự rà soát lại lỗi nhưng vẫn sót, tự sửa lỗi nhưng vẫn chưa sửa ra kết quả tốt nhất|
+| 4 |Cần đọc, tổng hợp nhiều thông tin|Khi luyện nói, tôi muốn biết mình phát âm một từ đúng hay sai, để không mang lỗi sai vào giao tiếp thật|Bản thân|Hôm qua có bài nghe phải nghe lại 5 lần để xem mình đọc có giống mẫu không|
+| 5 |Cần đọc, tổng hợp nhiều thông tin|Khi tự học tiếng Anh sau giờ học hoặc giờ làm, tôi muốn giữ được lịch học đã đặt ra, để không bỏ giữa chừng rồi phải học lại từ đầu|Bản thân|Tháng trước có 3 buổi định dùng để luyện nghe mà cuối cùng chán quá nên bỏ|
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
