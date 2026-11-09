@@ -152,6 +152,7 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 | Hiện đang xử lý bằng cách nào (workaround)? |Dùng danh sách nhiệm vụ tập trung, ghi deadline và chọn trước công việc cho ngày hôm sau.|
 | Mất bao lâu, bao lần? |Số liệu giả lập: khoảng 5–10 phút/ngày kiểm tra và điều chỉnh kế hoạch; khoảng 3 lần/tháng làm gấp, chủ yếu do thời gian rảnh bị thu hẹp.|
 | Insight / opportunity rút ra |Quản lý thông tin và ưu tiên không giải quyết được toàn bộ tình trạng làm gấp. Cần nhận diện trường hợp khối lượng công việc vượt thời gian có thể dành cho học tập.|
+
 Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong việc tổng hợp nhiệm vụ, lựa chọn ưu tiên hoặc ước lượng thời gian thực hiện. Tình huống C đưa ra tín hiệu phản bác: người học vẫn có thể làm gấp dù đã biết deadline và thứ tự ưu tiên, do thời gian học bị hạn chế bởi công việc khác. Vì vậy, nhóm cần kiểm tra đồng thời yếu tố thông tin phân tán, cách lựa chọn ưu tiên và quỹ thời gian thực tế, thay vì mặc định việc làm gấp chỉ do quản lý deadline chưa hiệu quả. Đây là tổng hợp từ kịch bản minh họa, chưa phải kết quả kiểm chứng với ba người dùng thực tế.
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
