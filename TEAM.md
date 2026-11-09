@@ -90,11 +90,12 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Chuẩn bị và pitch ba candidate #7–#9; đặt câu hỏi phản biện cho candidate #2 và #5.
 - Cung cấp candidate #7 cùng baseline khoảng 25 phút/ngày và khoảng 4 lần/tháng phải làm gấp; candidate này được nhóm chọn.
 - Research ba hướng giải pháp hiện có: Todoist, workflow Zapier Discord–Todoist và Motion auto-scheduling; phân tích bước được giải, khoảng trống và bài học.
+- Chi tiết hóa quy trình hiện tại thành bốn bước có thời gian và thiết kế quy trình tương lai giả thuyết gồm Rule/Workflow, AI hỗ trợ, bước con người kiểm tra, boundary và phương án quay về.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- `report/team/group_report.md`: mục 2.1 (candidate #7–#9 và câu hỏi tại #2, #5), mục 2.4 (candidate được chọn), mục 3.3 (bảng research).
-- `report/individual/2A202603675_NguyenCongQuan.md`: CP1, CP2 và mục 4 nhật ký tham gia CP3–CP4.
+- `report/team/group_report.md`: mục 2.1 (candidate #7–#9 và câu hỏi tại #2, #5), mục 2.4 (candidate được chọn), mục 3.3 (bảng research), mục 4 (quy trình trước/sau và bảng before/after).
+- `report/individual/2A202603675_NguyenCongQuan.md`: CP1, CP2 và mục 4 nhật ký tham gia CP3–CP5.
 - Commit cá nhân: `aba1090` (CP1), `7bae1df` (CP2), `4319ccd` (CP4 Research).
 
 **Điều mình học được từ phần nhóm:**
