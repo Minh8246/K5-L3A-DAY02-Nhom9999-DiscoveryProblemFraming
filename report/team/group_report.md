@@ -181,36 +181,56 @@ Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong v
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — 4 bước, khoảng 25 phút/ngày (dao động 15–30 phút), 4/4 bước thủ công
 
+[1. Mở và kiểm tra 5 nền tảng: 7']
+→ [2. Liệt kê nhiệm vụ: 5']
+→ [3. Kiểm tra deadline và khối lượng: 5']
+→ [4. Xếp thứ tự ưu tiên: 8'] ← BOTTLENECK
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Học viên | Zalo, Discord, ứng dụng tiếng Anh, Cohort và web khóa học | Các thông báo và nội dung có thể chứa nhiệm vụ | Khoảng 7 phút, mỗi ngày | Mở lần lượt 5 nguồn; hoàn toàn thủ công. |
+| 2 | Học viên | Nội dung vừa đọc và ghi nhớ tạm thời | Danh sách nhiệm vụ ban đầu | Khoảng 5 phút, mỗi ngày | Tự nhận biết đâu là nhiệm vụ và chép lại; chưa có nơi tập trung được cập nhật đều. |
+| 3 | Học viên | Danh sách nhiệm vụ và thông tin ở từng nguồn | Danh sách có deadline và ước lượng khối lượng còn lại | Khoảng 5 phút, mỗi ngày | Có thể phải quay lại nguồn nếu thiếu deadline hoặc yêu cầu. |
+| 4 | Học viên | Deadline, khối lượng còn lại và thời gian rảnh trong ngày | Thứ tự công việc dự kiến thực hiện | Khoảng 8 phút, mỗi ngày | **Bottleneck:** phải cân nhắc nhiều yếu tố bằng trí nhớ; không có handoff, học viên tự quyết định và tự thực hiện. |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Bước 4 — xác định và xếp thứ tự việc cần làm trước, khoảng 8 phút/ngày. Học viên phải so sánh đồng thời deadline, khối lượng còn lại và thời gian rảnh; CP4 cũng cho thấy chỉ biết deadline chưa đủ và thiếu thời gian vẫn có thể làm kế hoạch thất bại.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI (GIẢ THUYẾT ĐỂ ĐÁNH GIÁ Ở CP6) — 5 bước, kỳ vọng tối đa 10 phút/ngày
 
+[1. Đồng bộ danh sách tập trung + tạo task ứng viên từ Discord: ~1'] ← RULE/WORKFLOW
+→ [2. Kiểm tra 4 nguồn chưa hỗ trợ và Quick Add task còn thiếu: ~4'] ← CON NGƯỜI
+→ [3. Kiểm tra trường bắt buộc, gắn cờ thiếu deadline/thời lượng: ~1'] ← RULE
+→ [4. Đề xuất thứ tự/lịch làm từ deadline, thời lượng và thời gian rảnh: ~1'] ← AI/OPTIMIZATION
+→ [5. Kiểm tra task, sửa dữ liệu và chốt kế hoạch: ~3'] ← CON NGƯỜI
+
+BOUNDARY: Workflow/AI không tự thay đổi deadline chính thức, không tự xóa hoặc đánh dấu
+hoàn thành nhiệm vụ, không tự chốt thứ tự cuối và không gửi/nộp bài thay học viên.
+Mọi task được nhập tự động và lịch đề xuất phải được học viên kiểm tra trước khi dùng.
+
+PHƯƠNG ÁN QUAY VỀ: nếu tích hợp hoặc AI sai/ngừng hoạt động, học viên dùng danh sách
+tập trung như checklist/lịch chung, nhập task bằng Quick Add và tự sắp theo deadline,
+khối lượng, thời gian rảnh. Nếu Discord tạo task rác, tắt workflow và nhập thủ công.
 ```
+
+Đây là quy trình tương lai giả thuyết, chưa phải quyết định chọn AI. Các mốc thời gian sau là kỳ vọng cần đo bằng cách bấm giờ trong pilot; CP6 phải so sánh phương án này với No AI và Rule trước khi chốt mức can thiệp.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 4 | 5 | Tách bước kiểm tra dữ liệu và bước con người phê duyệt để giữ quyền kiểm soát. |
+| Tổng thời gian | Khoảng 25 phút/ngày, dao động 15–30 phút | Kỳ vọng tối đa 10 phút/ngày | Target từ Problem Card #1; phải đo lại khi pilot. |
+| Số bước thủ công | 4/4 | 2/5 | Con người vẫn kiểm tra các nguồn chưa hỗ trợ và chốt kế hoạch cuối. |
+| Bottleneck chính | Xếp thứ tự ưu tiên, khoảng 8 phút | Kiểm tra dữ liệu và chốt kế hoạch, kỳ vọng khoảng 3 phút | Bottleneck mới là điểm kiểm soát cần giữ, không nên tự động hóa hoàn toàn. |
+| Rủi ro mới phát sinh | Chưa có rủi ro tự động hóa; dễ quên hoặc phát hiện muộn task | Bỏ sót nguồn chưa hỗ trợ; Discord tạo task rác; deadline/thời lượng nhập sai; AI xếp lịch không phù hợp | Giảm rủi ro bằng cờ thiếu dữ liệu, bước duyệt của con người, quyền tắt workflow và phương án quay về. |
 
 ---
 
