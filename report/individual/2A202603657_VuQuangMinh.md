@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Họ tên: Vũ Quang Minh
+- MSSV: 2A202603657
+- Email trường (không bắt buộc, repo có thể để public): 26ai.minhvq2@vinuni.edu.vn
+- Tên nhóm: Nhom9999
+- Link repo nhóm: https://github.com/Minh8246/K5-L3A-Day02-Nhom9999-DiscoveryProblemFraming
 
 ---
 
