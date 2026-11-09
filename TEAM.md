@@ -36,23 +36,32 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### HaHuyThai-2A202603682
 
 **Phần việc phụ trách:**
 
--
+-Phụ trách kiểm chứng CP4 (phỏng vấn), mức can thiệp AI và Problem Statement v1 (CP6); hỗ trợ quy trình trước/sau CP5 và quyết định CP6.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+-Chuẩn bị và pitch ba candidate #4–#6 (kiểm tra file trước khi nộp, tìm lỗi Python, so sánh kết quả train); đặt câu hỏi phản biện cho các candidate #1, #3, #7 và #9.
+- Phụ trách kiểm chứng CP4: xây dựng assumption map, tổng hợp các interview snapshot và xác định những giả định cần kiểm chứng thêm.
+- Hỗ trợ xây dựng quy trình trước/sau CP5, xác định bước nghẽn, phần việc con người cần kiểm tra và phương án quay về khi AI sai.
+- Thực hiện CP6 (mục 6): phân tích ma trận độ mơ hồ × độ phức tạp, so sánh No AI / Rule / Workflow / Agent, xây dựng AI Canvas và trả lời hai câu hỏi Google PAIR.
+- Đề xuất Workflow có AI hỗ trợ xếp thứ tự ưu tiên, đồng thời phân tích hạn chế của Rule và rủi ro khi AI bỏ sót nhiệm vụ.
+- Xây dựng Problem Statement v1 và các tiêu chí đánh giá đầu ra; phối hợp với nhóm rà soát để thống nhất với quyết định Go phạm vi nhỏ ở mức Rule, hai bước AI giữ ở Not Yet.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+-report/team/group_report.md: mục 2.1 (candidate #4–#6 và các câu hỏi phản biện), mục 3 (kiểm chứng CP4), mục 4 (hỗ trợ quy trình), mục 6 (ma trận, bảng so sánh, AI Canvas, Google PAIR), mục 7 (Problem Statement v1, tiêu chí đánh giá).
+
+- report/individual/2A202603682_HaHuyThai.md: CP1, CP2 và các phần nhật ký tham gia, sử dụng AI cần cập nhật theo công việc thực tế.
+
+- Commit: bổ sung mã commit cá nhân sau khi push phần CP4(fbcc6b1) và CP6(77ffd18) lên GitHub.
 
 **Điều mình học được từ phần nhóm:**
 
--
+-Tôi hiểu rằng không phải vấn đề nào cũng cần dùng AI. Cần xác định rõ bước nghẽn, có số liệu kiểm chứng và thử giải pháp đơn giản trước. Qua CP6, tôi học được cách so sánh các mức can thiệp AI, đánh giá rủi ro và giữ con người kiểm tra những quyết định quan trọng.
 
 ### VuQuangMinh-2A202603657
 
