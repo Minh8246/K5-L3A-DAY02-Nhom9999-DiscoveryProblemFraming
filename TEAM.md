@@ -67,13 +67,14 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Viết cluster, cây OST, bảng chấm điểm shortlist và lý do chọn/loại; đề xuất chọn candidate #7, nhóm đồng ý.
 - Điền thông tin nhóm, vai trò và phân công theo checkpoint trong `TEAM.md`.
 - Rà soát mục 3 (CP4): mở lại link research, bổ sung nguồn trang giá Zapier, bổ sung thời gian và cách phỏng vấn cho các snapshot.
+- Viết Problem Statement v0 (mục 5, CP5): 6 trường dựa trên quy trình nháp card #7 của Quân và 3 snapshot CP4; nhờ AI phản biện, sửa 3 điểm ngay ở v0 và chuyển 3 điểm (metric tỉ lệ, guardrail sót nhiệm vụ, phạm vi actor) sang v1 cho CP6; đối chiếu mục 5 với quy trình mục 4 của Quân và sửa 2 chỗ lệch.
 - Review và merge 15 PR của nhóm vào `main`.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4).
-- `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2 và mục 4 nhật ký tham gia CP3.
-- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm).
+- `report/team/group_report.md`: mục 2.1 (candidate #1–#3, câu hỏi tại #4, #6, #8), mục 2.2–2.4 (cluster, OST, chấm điểm, lý do chọn/loại), mục 3 (rà soát CP4), mục 5 (Problem Statement v0 và bảng phản biện).
+- `report/individual/2A202603657_VuQuangMinh.md`: CP1, CP2, mục 4 nhật ký tham gia CP3–CP5 và mục 5 dùng AI đến CP5.
+- Commit: `d0cc88c`, `557adc2` (thông tin nhóm, chốt #7, phân công), `1b2900f` (câu hỏi phản biện bảng 2.1), `7d01002` (cluster, OST, chấm điểm), `f348dd2` (sửa câu chữ báo cáo nhóm), `a1e4ca4` (rà soát CP4), `fef8440` (Problem Statement v0).
 
 **Điều mình học được từ phần nhóm:**
 
