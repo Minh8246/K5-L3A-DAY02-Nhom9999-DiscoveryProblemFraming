@@ -107,39 +107,62 @@ Giải thích điểm:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 |Thông tin nhiệm vụ phân tán khiến học viên mất thời gian kiểm tra và dễ bỏ sót hoặc phát hiện muộn deadline.|Value|5|2|Có|
+| 2 |Khó xác định thứ tự ưu tiên góp phần khiến học viên làm gấp sát deadline, bên cạnh thiếu thời gian và trì hoãn.|Value|5|2|Có|
+| 3 |Vấn đề xuất hiện ở nhiều học viên học song song các chương trình, không chỉ người đưa ra candidate #7.|Value|5|1|Có|
+| 4 |Người học có thể duy trì cập nhật và điều chỉnh danh sách nhiệm vụ tập trung mà không thấy quá phiền.|Usability|4|1|__|
+| 5 |Nhóm có thể lấy được tên nhiệm vụ, deadline và nguồn giao bài đủ chính xác từ dữ liệu người học cung cấp trong phạm vi lab.|Feasibility|5|1|Có|
+| 6 |Thời gian tiết kiệm lớn hơn thời gian nhập liệu, kiểm tra và sửa thông tin của giải pháp.|Viability|4|1|Sau khi có thử nghiệm|
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: #1, #2 và #3.
+
+Mục tiêu là phân biệt ba nguyên nhân: thông tin phân tán, khó xếp ưu tiên và thiếu thời gian. Nhóm chưa mặc định rằng cần xây ứng dụng mới hoặc sử dụng AI Agent.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Phỏng vấn ba học viên học song song nhiều chương trình, tập trung vào lần gần nhất phải làm gấp, cách quản lý hiện tại và nguyên nhân bắt đầu muộn.
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên A, học song song ở trường, trung tâm tiếng Anh và khóa AI; đại diện cho bối cảnh candidate #7.|
+| Câu nói đáng nhớ nhất (nguyên văn) |"Mình phải mở từng chỗ để xem có bài gì, nhưng xem xong vẫn phân vân nên làm bài nào trước."|
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Học viên ưu tiên báo cáo ở trường mà chưa kiểm tra lại hạn bài lab AI. Đến tối trước hạn nộp mới nhận ra bài lab còn nhiều phần chưa làm và phải hoàn thành gấp.|
+| Hiện đang xử lý bằng cách nào (workaround)? |Mở từng nền tảng, xem lại thông báo, ghi một số việc vào ghi chú điện thoại và tự chọn việc cần làm trước. Danh sách chưa được cập nhật đều.|
+| Mất bao lâu, bao lần? |Dùng mức tự báo cáo từ CP3 làm dữ liệu đầu vào cho kịch bản: khoảng 25 phút/ngày, trong đó 8 phút xếp ưu tiên; khoảng 4 lần/tháng làm gấp. Đây không phải số liệu phỏng vấn mới.|
+| Insight / opportunity rút ra |Cần giảm công sức kiểm tra nhiều nguồn và giúp người học nắm đồng thời hạn nộp, phần việc còn lại trước khi chọn ưu tiên.|
 
-Tổng hợp:
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên B, đang học đại học và một khóa tiếng Anh.|
+| Câu nói đáng nhớ nhất (nguyên văn) |"Mình nhớ hạn nộp, nhưng cứ chọn bài dễ làm trước, đến lúc làm bài lớn mới biết không đủ thời gian."|
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Trong kịch bản, học viên hoàn thành nhiều bài tập ngắn trước rồi mới bắt đầu bài thuyết trình. Dù biết deadline, học viên đánh giá thấp thời gian chuẩn bị và phải làm gấp vào tối cuối.|
+| Hiện đang xử lý bằng cách nào (workaround)? |Ghi deadline vào lịch điện thoại nhưng chưa ghi thời lượng dự kiến hoặc chia nhỏ bài lớn.|
+| Mất bao lâu, bao lần? |Khoảng 15 phút/ngày kiểm tra và chọn việc, trong đó khoảng 5 phút xếp ưu tiên; khoảng 2 lần/tháng làm gấp.|
+| Insight / opportunity rút ra |Nhớ deadline chưa đủ. Người học còn cần nhận biết khối lượng còn lại và thời điểm nên bắt đầu nhiệm vụ lớn.|
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) |Học viên C, đang học đại học và khóa AI, đồng thời có công việc bán thời gian.|
+| Câu nói đáng nhớ nhất (nguyên văn) |"Mình có danh sách và biết bài nào cần làm trước, nhưng hôm đi làm về thì không còn đủ thời gian."|
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |Trong kịch bản, ca làm thêm kéo dài khiến học viên không thực hiện được kế hoạch làm bài đã đặt ra. Học viên phải dồn phần còn lại vào ngày sát hạn.|
+| Hiện đang xử lý bằng cách nào (workaround)? |Dùng danh sách nhiệm vụ tập trung, ghi deadline và chọn trước công việc cho ngày hôm sau.|
+| Mất bao lâu, bao lần? |Số liệu giả lập: khoảng 5–10 phút/ngày kiểm tra và điều chỉnh kế hoạch; khoảng 3 lần/tháng làm gấp, chủ yếu do thời gian rảnh bị thu hẹp.|
+| Insight / opportunity rút ra |Quản lý thông tin và ưu tiên không giải quyết được toàn bộ tình trạng làm gấp. Cần nhận diện trường hợp khối lượng công việc vượt thời gian có thể dành cho học tập.|
+
+Tổng hợp: Hai trong ba tình huống (A và B) minh họa khó khăn trong việc tổng hợp nhiệm vụ, lựa chọn ưu tiên hoặc ước lượng thời gian thực hiện. Tình huống C đưa ra tín hiệu phản bác: người học vẫn có thể làm gấp dù đã biết deadline và thứ tự ưu tiên, do thời gian học bị hạn chế bởi công việc khác. Vì vậy, nhóm cần kiểm tra đồng thời yếu tố thông tin phân tán, cách lựa chọn ưu tiên và quỹ thời gian thực tế, thay vì mặc định việc làm gấp chỉ do quản lý deadline chưa hiệu quả. Đây là tổng hợp từ kịch bản minh họa, chưa phải kết quả kiểm chứng với ba người dùng thực tế.
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+|Mô tả candidate #7 trong CP3|1 người tự báo cáo|Có ước lượng thời gian kiểm tra, xếp ưu tiên và tần suất làm gấp.|Chưa có log hoặc tình huống cụ thể để xác định nguyên nhân.|
+|Snapshot A |1 tình huống|Minh họa khả năng thông tin phân tán và khó chọn ưu tiên cùng góp phần gây làm gấp.|Việc không cập nhật ghi chú cũng có thể liên quan đến thói quen sử dụng.|
+|Snapshot B |1 tình huống|Minh họa khó khăn chọn ưu tiên và ước lượng công sức dù đã biết deadline.|Không ủng hộ giả định rằng bỏ sót deadline luôn là nguyên nhân chính.|
+|Snapshot c |1 tình huống|Minh họa nhu cầu cân đối nhiệm vụ với thời gian rảnh.|Cho thấy vẫn có thể làm gấp dù đã có danh sách và biết thứ tự ưu tiên.|
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem thế nào sau kiểm chứng: không quy toàn bộ tình trạng làm gấp cho việc kiểm tra nhiều nền tảng: Học viên học song song ở trường, trung tâm tiếng Anh và khóa AI gặp khó khăn khi tổng hợp nhiệm vụ và lựa chọn việc cần làm trước dựa trên deadline, khối lượng còn lại và thời gian rảnh. Candidate #7 tự báo cáo dành khoảng 25 phút/ngày cho kiểm tra và xếp ưu tiên, trong đó 8 phút cho xếp ưu tiên, đồng thời khoảng 4 lần/tháng phải làm gấp sát deadline. Cần xác định mức đóng góp của khó khăn quản lý thông tin so với thiếu thời gian và trì hoãn.**
 
 ### 3.3. Research giải pháp đã có
 
