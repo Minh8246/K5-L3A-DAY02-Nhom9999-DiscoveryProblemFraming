@@ -151,7 +151,7 @@ HIỆN TẠI — khoảng 50 phút/bài, 2 bài/tuần
 | Chọn candidate problem | Đề xuất chọn #7 (Quân) | Nhóm đồng ý chọn #7 |
 | Kiểm chứng / research | | |
 | Quy trình nhóm | | |
-| Problem Statement | | |
+| Problem Statement | Người chính Problem Statement v0 (CP5): viết 6 trường dựa trên quy trình nháp card #7 của Quân và 3 snapshot CP4; nhờ AI phản biện bản nháp | Bottleneck giữ ở bước xếp ưu tiên nhưng ghi rõ lý do; baseline được ghi là tự ước lượng và thêm 2 tuần nhật ký để đo thật; Boundary có 3 tình huống bắt buộc con người kiểm tra. Ba điểm (metric tỉ lệ, guardrail sót nhiệm vụ, phạm vi actor) chuyển sang v1 cho CP6 |
 | Mức can thiệp AI | | |
 | Quyết định | | |
 
@@ -166,7 +166,7 @@ HIỆN TẠI — khoảng 50 phút/bài, 2 bài/tuần
 | CP3 Hội tụ (chỉ định dạng và rà số liệu) | Không dùng AI cho pitch, câu hỏi phản biện, cluster, cây OST, chấm điểm và lý do chọn/loại. Chỉ nhờ Claude chuyển phần nhóm đã viết sang đúng bảng Markdown, sửa lỗi làm vỡ bảng, chép câu hỏi phản biện sang mục 4, và rà số liệu mục 2.4 với bảng 2.1 | Phát hiện dòng #9 ở bảng 2.1 bị xuống dòng làm vỡ bảng; phần giải thích và lý do loại #8 ghi "4 phút mỗi lần quay lại" trong khi bảng 2.1 là 10 phút/lần (4 phút chỉ là bước đọc lại); tên #7 không thống nhất giữa các mục; mục 4 ghi đã sửa card nhưng card chưa đổi | AI chỉ kiểm được định dạng và số liệu, không đánh giá được lập luận chọn/loại candidate (phần này nhóm tự làm) | Ghi các thay đổi sau phản biện vào cột "Điều còn chưa chắc" ở bảng top 3 cho khớp với mục 4; bỏ cụm "bổ sung ví dụ lỗi" ở card #3 vì chưa có ví dụ thật; sửa số phút của #8 thành 10 phút/lần |
 | CP4 Research (rà soát mục 3 báo cáo nhóm) | Nhờ Claude rà mục 3 báo cáo nhóm theo rubric và mở lại 5 link research để đối chiếu với phần trích | Phát hiện trang Zapier được trích không có thông tin "gói miễn phí kiểm tra 15 phút" và không nói đến lọc theo keyword; tìm ra trang giá Zapier xác nhận 15 phút/lần và gói Free không có Filter. Chỉ ra snapshot thiếu ngày và cách phỏng vấn | AI nghi Snapshot A là thành viên nhóm vì số liệu trùng với candidate #7, nhưng thực tế A là người ngoài nhóm | Xác nhận A là người ngoài nhóm, các buổi phỏng vấn làm trực tiếp ngày 09/11/2026; giữ snapshot A, chỉ bỏ câu gây hiểu nhầm. Thêm link trang giá Zapier làm nguồn và sửa phần trích cho khớp |
 | CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP5–6 Problem Statement | Nhờ Claude soạn nháp Problem Statement v0 từ card #7 (Quân) và mục 3 báo cáo nhóm, rồi đóng vai "PM hoài nghi" phản biện bản nháp theo checklist CP5 | Chỉ ra baseline chỉ là ước lượng theo trí nhớ của 1 người; số lần làm gấp/tháng phụ thuộc số deadline trong tháng nên cần đổi sang tỉ lệ; metric thời gian thiếu guardrail chống sót nhiệm vụ; snapshot C (thiếu thời gian) không được giải bằng việc xếp ưu tiên | AI tự viết rồi tự phản biện bản nháp của chính nó nên bỏ sót lỗi của mình: tự chấm "Đạt" cho tiêu chí không lẫn giải pháp dù Boundary ghi "người học nhập" (ngầm giả định có công cụ nhập liệu); không chỉ ra baseline đo 2 tuần nhưng so với 4 tuần sau, trong khi target tính theo tháng. AI cũng tự điền cột "Đồng ý?" trong bảng phản biện thay cho nhóm | Sửa Boundary thành "đưa ra hoặc xác nhận, AI không tự ước lượng thay"; ghi thêm vào điểm phản biện #2 rằng metric tỉ lệ ở v1 giải quyết luôn việc hai kỳ đo dài khác nhau; tự điền lại cột "Đồng ý?" theo ý kiến nhóm |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
